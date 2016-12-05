@@ -1,0 +1,1672 @@
+negative nouns: ----------------------------------------------
+negative adjectives: ----------------------------------------------
+
+hate
+base
+poison
+calamity
+stupid
+
+bad
+corrupt
+destructive
+
+fallen
+corrupted
+dark
+rotten
+
+
+heinous
+hideous
+malevolent
+malicious
+nefarious
+vicious
+vile
+wicked
+
+foul
+low
+reprobate
+wrong
+angry
+atrocious
+baneful
+beastly
+calamitous
+damnable
+depraved
+disastrous
+execrable
+flagitious
+harmful
+iniquitous
+injurious
+loathsome
+maleficent
+malignant
+obscene
+pernicious
+rancorous
+repugnant
+repulsive
+revolting
+spiteful
+stinking
+wrathful
+mischief
+
+murderous
+sinister
+revenge
+avengeful
+vengeful
+wicked
+spiteful
+hell
+
+hostile
+maligned
+rough
+tough
+dire
+ominous
+perverse
+adverse
+apocalypse
+blackheart
+corrupt
+deleterious
+doom
+forboding
+ill
+auspicious
+injurious
+malign
+malignant
+obnoxious
+portentious
+
+unfavorable
+unfortunate
+unlucky
+woeful
+
+appalling
+deplorable
+dreadful
+feeble
+lamentable
+miserable
+paltry
+pathetic
+pitiful
+wretched
+agony
+anguish
+catastrophic
+catastraphoe
+disconsolate
+disgrace
+distress
+gloom
+grievous
+heartsick
+heartless
+inadequate
+mournful
+rotten
+sorrow
+torture
+tragic
+tragedy
+appalling
+cataclysmic
+cataclysm
+deadly
+destructive
+destruction
+disastrous
+fatal
+fatality
+terror
+terrible
+deathly
+forlorn
+hapless
+ruinous
+atrotious
+dangerous
+extreme
+ghastly
+gruesome
+hideous
+horrendous
+horrid
+serious
+severe
+dread
+fear
+hate
+odious
+offensive
+spell
+curse
+chain
+prison
+darkness
+rust
+rotten
+bloody
+bruised
+suspicious
+suspicion
+wrong
+
+
+
+
+holy words -------------------------------------------------------
+
+holy
+divine
+humble
+pure
+revere
+reverie
+revered
+righteous
+sublime
+belief
+devotion
+faith
+innocence
+angelic
+angel
+blessed
+dedication
+devout
+glory
+immaculate
+prayer
+seraph
+angelic
+celestial
+eternal
+heaven
+marvelous
+mystical
+sacred
+transcendent
+wonder
+glorious
+magnificant
+splendid
+supreme
+amazing
+astonishing
+brilliant
+fabulous
+fantastic
+marvelous
+phenomenon
+pleasant
+strange
+dynamite
+prime
+staggering
+stupendous
+swell
+
+better
+improvisation
+lucky
+
+
+
+
+
+
+
+
+
+--------------------------- bookworm:
+
+library
+glossary
+abstract
+almanac
+annotation
+footnote
+archive
+article
+journal
+catalog
+attachment
+anecdote
+browser
+internet
+search term
+checkout
+late fee
+citation
+dialup
+editor
+Encyclopedia
+token
+protocol
+pact
+oath
+convenant
+lease
+bargain
+bond
+comment
+flashcard
+remark
+definition
+debate
+study
+survey
+outline
+rehash
+keyword
+hyperlink
+microfilm
+microfiche
+periodical
+reference
+index
+
+
+
+
+
+
+
+
+fashion glossary------------------------------------------------
+garment
+fabric
+apparel
+shoe
+glove
+design
+sew
+sewn
+matte
+pattern
+collar
+necklace
+ring
+bag
+handbag
+purse
+jewel
+gem
+wood
+satin
+bonnet
+crown
+tiara
+silk
+buttonhole
+cap
+slipper
+embroidery
+fashion show
+in style
+braid
+polyester
+acrylic
+spandex
+textile
+fedora
+visor
+sheer
+hem
+evening gown
+wedding dress
+lace
+knotting
+needlepoint
+thread
+makeup
+high heel
+pleat
+zipper
+seam
+tie dye
+basket weave
+zig zag
+yarn
+tailor
+casting call
+model
+lights camera
+open house
+catwalk
+photo finish
+Iridescent
+
+Herringbone
+Filigree
+hemline
+watercolor
+high heel
+3D
+2D
+pocket
+yoke
+bedazzled
+glitter
+
+
+
+lazer
+gun
+barrel
+tech
+book
+library
+tomb
+page
+sentence
+runon
+period
+comma
+colon
+semicolon
+paragraph
+essay
+album
+brochure
+copy
+dictionary
+edition
+fiction
+pulp
+magazine
+clip
+manual
+novel
+paperback
+hardcover
+pamphlet
+publication
+text
+textbook
+tome
+volume
+work
+writing
+atlas
+bestseller
+bible
+codex
+compendium
+dissertation
+encyclopaedia
+folio
+handobok
+leaflet
+map
+lexicon
+monograph
+omnibus
+opus
+periodical
+portfolio
+primer
+reader
+reprint
+roll
+scroll
+thesaurus
+tract
+treatise
+treaty
+booklet
+bill
+balance
+accounts
+check
+computation
+inventory
+invoice
+ledger
+record
+register
+report
+score
+statement
+tab
+tally
+hypothesis
+index
+reserve
+stockpile
+supply
+account
+catalogue
+file
+hoard
+item
+itemize
+record
+roster
+schedule
+itinerary
+store
+summary
+table
+flyer
+edition
+bibliophile
+intellectual
+reader
+scholar
+bookworm
+egghead
+student
+disciple
+science
+branch
+system
+lore
+control
+deduction
+logic
+method
+precision
+precise
+objective
+sound
+reason
+evidence
+experiment
+measure
+proof
+lab
+develop
+test
+trial
+trial-and-error
+alpha
+beta
+gamma
+theta
+compound
+element
+microscope
+slide
+specimen
+lense
+observe
+magnify
+hot plate
+graduation
+cylinder
+graduated cylinder
+beaker
+flask
+stopper
+test tube
+funnel
+petri dish
+eye dropper
+thermometer
+safety goggles
+digital
+centrifuge
+pipette
+apothecary
+medicine dropper
+medicine
+essential oil
+bulb
+analysis
+mixer
+stainless steel
+magnet
+excerpt
+apex
+barometer
+readout
+scale
+gravity
+acid
+buffer
+battery
+lab rat
+refridgerator
+oven
+enterprise
+operatice
+practice
+probe
+research
+study
+venture
+dissect
+quiz
+pop quiz
+speculation
+aim
+endeavor
+goal
+objective
+seek
+audit
+canvass
+cross-examination
+diagnosis
+exam
+exploration
+final
+inquest
+inquiry
+inquisition
+inspection
+investigation
+quest
+questionnaire
+scan
+scrutiny
+third degree
+view
+interrogate
+judge
+query
+axiom
+conclusion
+conjecture
+guess
+infer
+inference
+premise
+proposition
+ration
+rationale
+theorem
+theory
+thesis
+assignment
+belief
+condition
+data
+deduction
+induction
+derivative
+derivation
+lemma
+postulate
+principle
+proposal
+scheme
+speculation
+suggestion
+surmise
+calculation
+fact
+assume
+hunch
+notion
+conception
+twist
+
+
+
+--------------------colors/minerals:
+cobalt
+amber
+
+
+--------------------------- musical:
+minuet
+allegro
+A cappella
+Accelerando
+Adagio
+Allegro
+Atonal
+Baroque
+Beat
+Cadence
+Cadenza
+Canon
+Cantata
+Capriccio
+Carol
+Castrato
+Cavatina
+Chamber
+Chant Choir
+Chorale
+CHord
+Progression
+Chorus
+Chromatic
+Classical
+Clavier
+Clef
+Coda
+Concert
+Concerto
+Conductor
+Consonance
+Counterpoint
+Da Capo
+Dissonance
+Drone
+Duet
+Elegy
+Encore
+Ensemble
+Etude
+Exposition
+Falsetto
+Fermata
+Fifth
+Finale
+Flat
+FOrm
+Forte
+Fourth
+Fugue
+Glissando
+Grandioso
+Grave
+Harmony
+Hymn
+Instrumental
+Interlude
+Intermezzo
+Interval
+harmonic
+slap bass
+palm mute
+dive bomb
+duck walk
+power chord
+shred
+Key Signature
+key
+Note
+Legato
+Libretto
+Madrigal
+Maestro
+Major
+March
+Measure
+Medley
+Mezzo
+Minuet
+Modes
+Modulation
+Monotone
+Motif
+Movement
+Natural
+Nocturne
+Notation
+Octave
+Octet
+Opera
+Orchestra
+Ornament
+Ostinato
+Overture
+Parody
+Part
+Partita
+Phrase
+Piano
+Pitch
+Pizzicato
+Prelude
+Presto
+Quartet
+Quintet
+Recital
+Reed
+Refraint
+Renaissance
+Reprise
+Requiem
+Resonance
+Rhythm
+Rococo
+Romantic
+Rondo
+Root
+Round
+Rubato
+Scherzo
+Septet
+Sequence
+Serenade
+Sextet
+Sharp
+Slide
+Slur
+Sonata
+Song
+Cycle
+Soprano
+Staccato
+Staff
+Suite
+Symphony
+Tablature
+Temperment
+Tempo
+Theme
+Timbre
+Tonal
+Tonality
+Tone
+Tonic
+Treble
+Tremelo
+Triad
+Trill
+Trio
+Triple
+Tritone
+Tune
+Tutti
+Unison
+Vibrato
+Virtuoso
+Vivace
+Voice
+Waltz
+Whole note
+Whole tone
+
+
+woodwind
+brass
+percussion
+strings
+violin
+viola
+cello
+bass
+double bass
+keyboard
+harp
+repertoire
+roster
+venue
+stage hand
+flute
+oboe
+clarinet
+bassoon
+horn
+trumpet
+palette
+effect
+harmonic
+piccolo
+trombone
+drum
+snare
+triangle
+guitar
+flugelhorn
+cornet
+harpsichord
+organ
+saxophone
+dance
+bolero
+euphonium
+tuba
+ballet
+bassoon
+composer
+baroque
+bassline
+Lute
+Lyre
+Timpani
+Viola
+Violincello
+Tambourine
+cymbal
+Glockenspiel
+Tam-Tam
+Xylophone
+Vibraphone
+Bells
+Celesta
+Wood block
+snare drum
+bass drum
+Marimba
+Drum kit
+Theremin
+Synthesizer
+accompaniment
+bowing
+unison
+continuo
+rock
+pop
+jazz
+audition
+
+divertimento
+score
+Interpretation
+Articulation
+notation
+poem
+programme
+amplifier
+acoustic
+speaker
+woofer
+subwoofer
+pick
+vibration
+fingerpick
+bluegrass
+nylon string
+steel string
+electric guitar
+acoustic guitar
+overdrive
+distortion
+equalizer
+riff
+heavy metal
+flamenco
+country
+folk
+soul
+fret
+soundboard
+sound hole
+six string
+acoustic bass
+electric bass
+twelve string
+ivory keys
+arpeggio
+mariachi
+archtop
+pickup
+resonator
+bridge
+jingle jangle
+
+
+patch cable
+radio
+transmitter
+vacuum tube
+humbucker
+fretboard
+pull-off
+hammeron
+volume swell
+tremolo
+surround sound
+special effect
+transpose
+headstock
+truss rod
+soundboard
+
+
+
+modulus
+whammy bar
+transducer
+steel guitar
+frequency
+black keys
+white keys
+sustain pedal
+jazz fusion
+pianoforte
+etude
+
+anthem
+arabesque
+antiphony
+ballad
+caprice
+chant
+credo
+fancy
+fantasy
+gig
+masque
+mass
+mazurka
+ode
+polka
+polonaise
+prelude
+psalm
+requiem
+rhapsody
+serenade
+tango
+toccata
+accent
+Agitato
+alto
+baritone
+Batterie
+Klavier
+consonance
+Crescendo
+decrescendo
+Divertimento
+dynamic
+elegy
+embellishment
+fanfare
+Fortissimo
+glee
+lament
+largo
+lieder
+litany
+magnum opus
+metronome
+modulation
+ornament
+renaissance
+vox
+acoustic
+altissimo
+grace note
+broken chord
+bellicoso
+
+bird's eye
+coloratura
+colossale
+comodo
+
+cut time
+da capo
+dal segno
+al capo
+delicato
+devoto
+
+
+
+dolcissimo
+dolce
+double dot
+double stop
+downtempo
+half time
+echo
+encore
+eroico
+espressivo
+
+falsetto
+fermata
+focoso
+fuocoso
+fortissimo
+fortississimo
+forza
+forzando
+freddo
+fresco
+furia
+furioso
+grand pause
+gaudioso
+gentile
+giusto
+grandioso
+grazioso
+guerriero
+gustoso
+hemiloa
+syncopation
+polyphony
+improvvisando
+
+improvvisato
+incalzando
+
+insistendo
+intimo
+irato
+lacrimoso
+lagrimoso
+lamentando
+lamentoso
+largamente
+larghetto
+larghezza
+larghissimo
+lentando
+lentissimo
+lento
+liberamente
+libero
+lontano
+luninoso
+magico
+magnifico
+mancando
+marcato
+martellato
+marziale
+medley
+melancolico
+melisma
+mezzo forte
+mezzo piano
+mezzo-soprano
+misterioso
+mordent
+morendo
+narrante
+noblezza
+swing note
+obbligato
+semitone
+ottava
+parlando
+parlante
+asterisk
+diminuative
+poetico
+pomposo
+potpourri
+prestissimo
+prima volta
+ravvivando
+reprise
+ridicolo
+rilassato
+risoluto
+ritornello
+rondo
+scatenato
+sempre
+sentimento
+serioso
+simile
+close curtains
+silenzio
+sognando
+sonoro
+spiccato
+stornello
+stretto
+subito
+tacet
+tenor
+ternary
+tessitura
+tranquillo
+tremelo
+
+
+
+
+
+
+
+
+
+Applejack: cowboy stuff/Food and farming:-----------------------------------------------
+wagon
+spurs
+six shooter
+buckaroo
+candy wagon
+haybale
+bucking roll
+hoodlum
+jigger
+lead steer
+night hawk
+night herder
+night rider
+flank
+drover
+rosin
+duct tapt
+charm
+above board
+over board
+Ace in the hole
+Ace High
+Alfalfa
+Desperado
+Salt lick
+Nine pin
+caboose
+gold rush
+ambush
+timber
+
+whiskey
+rum
+scotch
+beer
+gin
+lager
+draught
+tequila
+
+
+toothpick
+cowhide
+Axle grease
+concert hall
+backdoor
+saloon
+backseat
+bad box
+bad egg
+badlands
+tumbleweed
+cactus
+bad medicine
+baker's dozen
+balderdash
+ballast
+crow's nest
+peddler
+weed
+barber
+barefoot
+barehoof
+barking irons
+barrel rider
+barrel fever
+frolic
+spree
+bat wings
+bazoo
+bean eater
+donut
+stump
+bed-house
+bed-rock
+beef
+bellyache
+belvidere
+bender
+arrowhead
+bow and arrow
+matchmaker
+olive oil
+dream book
+bed bug
+50 calibur
+sharp shooter
+big guns
+biscuit
+wardrobe
+blacksmith
+blather
+blaze
+informer
+bobtail
+boggy top
+bodega
+bonanza
+bogus
+orchard
+boodle
+bosh
+dollar
+penny
+nickel
+dime
+quarter
+courage
+bowie-knife
+brash
+brittle
+jerky
+broomtail
+coffee
+buckaroo
+blood
+poker
+firewater
+bug juice
+bulldozer
+bumblebee
+oasis
+bushwhacker
+flatlander
+buzzard
+bustle
+caboose
+cahoots
+calamity
+calico
+hangman
+iron
+candle light
+canister
+cannon
+catawampous
+namby-pamby
+saccharin
+necktie
+nibbler
+nipper
+nobby
+Jugful
+nubbin
+gnarled
+leather
+oats
+feather
+rackatee
+nitroglycerine
+piss
+vinegar
+bacon
+Owdacious
+Audacious
+Stirrups
+Owl
+Iron
+Paddle
+overalls
+pancake
+parade
+rodeo
+peacemaker
+strawberry
+dime novel
+persuader
+petticoat
+piggyback
+pistareen
+rawhide
+poppet
+pow-wow
+prairie oyster
+puddin time
+wheel spoke
+quincy
+quid
+railroad
+Rattler
+hocks
+rat trap
+red eye
+reverent
+rooseter
+roundup
+rowdy
+sagebrush
+saspiralla
+santiago
+savanna
+sawdust
+scallywag
+scrap
+screwloose
+sell out
+cheap trick
+rifle
+barbed wire
+Sixes and Sevens
+six shooter
+skedaddle
+skid
+skin-flint
+skittles
+skulduggery
+slangander
+slap-jack
+slicker
+molasses
+small fry
+snake out
+sourdough
+spendiferous
+squatter
+squinny
+squaddle
+squiffy
+stancheous
+cask
+counterfeit
+stretcher
+string-bean
+charcoal
+taffy
+taint
+talking iron
+trough
+tally
+tallow
+tarantula
+scorpian
+tarnation
+tee-total
+tenderfoot
+cakewalk
+gallows
+curfew
+toddy
+tombstone
+pantaloons
+tornado
+dust bowl
+varmint
+waddy
+wabble
+wampum
+wasp nest
+whim-wham
+whitewash
+winsome
+bottleneck
+
+
+
+
+
+
+Rainbow dash (sports, military, loyalty):-----------------------------------------------
+
+
+
+
+
+nature/water/earth/sky/space:-----------------------------------------------
+
+
+
+
+
+fluttershy_ pets/generosity/tea parties/singing::-----------------------------------------------
+
+
+
+
+food related/apples/kitchen equipment/cooking techniques:------------------
+
+
+
+rarity - artistic/fastionista/clothing ----------------------------------------
+
+paint brush
+easal
+painting
+sketch
+sketchpad
+utencil
+finetip
+graffitti
+intervention
+traffic jam
+abstract
+sublime
+academic
+Nouveau
+Artifice
+trickery
+deception
+assemblage
+cathedral
+avante-garde
+ball bearing
+brocade
+brushwork
+starry night
+calligraphy
+canvas
+weaving
+caricature
+render
+ceramic
+clay
+photograph
+cityscape
+scenery
+landscape
+sculpture
+fragment
+montage
+collage
+portrait
+still life
+self-portraight
+untitled
+corner pocket
+congo
+rattlesnake
+polygon
+cylinder
+station
+stationary
+color wheel
+afterimage
+unity
+specter
+ghost
+ghoul
+contour
+high contrast
+contrast
+darkroom
+obscura
+positive image
+chaos
+quill and ink
+ink well
+first draft
+final draft
+crayon
+implement
+bingo
+emulsion
+enamel
+pigment
+ephemera
+receipt
+clipping
+etching
+zinc
+wax
+printing press
+vat
+facade
+unreal
+fauve
+vibrant
+font
+typeface
+vanishing point
+frame
+gelatin
+curvature
+graphic
+outland
+bizarre
+Hieroglyphics
+horizon
+icon
+idol
+mixture
+slide
+slope
+steam power
+revolution
+academy
+irony
+juxtapose
+kinetic
+nutcracker
+seesaw
+lantern
+illumination
+mandala
+manifesto
+tactic
+mural
+spatial
+mirror
+monochrome
+mood
+muse
+obelisk
+pyramid
+opaque
+open source
+organic
+palette
+panel
+parody
+pastel
+plywood
+ratio
+replica
+satire
+silkscreen
+solvent
+stencil
+strobe light
+subconscious
+subject
+suburb
+tempera
+tenement
+tension
+tint
+translucent
+turpentine
+utopia
+venus
+vignette
+woodcut
+zoetrope
+airbrush
+beeswax
+bristol
+carnation
+cross-hatch
+fresco
+glaze
+medium
+miniature
+humpback
+hunchback
+wood pulp
+ragtime
+papyrus
+parchment
+plume
+roulette
+silhouette
+varnish
+copal
+mastic
+dammar
+abacus
+abbey
+aeolic
+aisle
+acropolis
+altar
+apex
+arcade
+arch
+atrium
+attic
+basilica
+buttress
+canopy
+cantilever
+chapel
+chevron
+circus
+coffer
+colossus
+column
+cornice
+crescent
+crest
+nave
+chancel
+transept
+crypt
+cupola
+curtain
+gate cushion
+cusp
+dome
+doric
+eave
+grotesque
+castle
+bastion
+colonade
+limestone
+marble
+veined
+pulpit
+minaret
+module
+mortar
+cement
+tracery
+vestibule
+excess
+palladin
+vase
+gable
+periscope
+binoculars
+pinnacle
+plinth
+podium
+portal
+vault
+stable
+afterimage
+
+pirouette
+sparkler
+
+
+folly
+mishap
+deviation
+retro
+
+TOLL
+rocket fuel
+gunshot
+crunch
+arcane
+solution
+
+magic
+mystic
+shtrapnel
+napalm'
+
+
+vanity
