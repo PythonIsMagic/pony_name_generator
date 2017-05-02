@@ -40,17 +40,17 @@ def noun_verb():
 
 # Pattern: Rainbow Dash/Alternative
 def light_verb():
-    return '{} {}'.format(random.choice(LIGHTS), random.choice(VERBS))
+    return '{} {}'.format(random.choice(HOLY), random.choice(VERBS))
 
 
 # Pattern: Twilight Sparkle
 def light_light():
-    return '{} {}'.format(random.choice(LIGHTS), random.choice(LIGHTS))
+    return '{} {}'.format(random.choice(HOLY), random.choice(HOLY))
 
 
 # Sunset Shimmer, Starlight Glimmer, etc
 def nounverb_light():
-    return '{}{} {}'.format(random.choice(VERBS), random.choice(NOUNS), random.choice(LIGHTS))
+    return '{}{} {}'.format(random.choice(VERBS), random.choice(NOUNS), random.choice(HOLY))
 
 
 def format_name(name):
@@ -61,7 +61,7 @@ def format_name(name):
 
 #  EMOTIONS = readfile('emotions.txt')
 NOUNS = readfile('nouns.txt')
-LIGHTS = readfile('lights.txt')
+HOLY = readfile('adjectives_holy')
 VERBS = readfile('verbs.txt')
 THREELETTERS = readfile('3letterwords.txt')
 ADJ = readfile('adjectives.txt')
