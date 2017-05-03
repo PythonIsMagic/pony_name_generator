@@ -1,5 +1,4 @@
 
-paint brush
 easal
 animation
 painting
@@ -14,7 +13,6 @@ utencil
 finetip
 graffitti
 intervention
-traffic jam
 abstract
 sublime
 academic
@@ -24,11 +22,8 @@ trickery
 deception
 assemblage
 cathedral
-avante-garde
-ball bearing
 brocade
 brushwork
-starry night
 calligraphy
 canvas
 weaving
@@ -46,32 +41,23 @@ montage
 collage
 portrait
 still life
-self-portraight
 untitled
-corner pocket
 congo
 rattlesnake
 polygon
 cylinder
 station
 stationary
-color wheel
 afterimage
 unity
 specter
 ghost
 ghoul
 contour
-high contrast
 contrast
 darkroom
 obscura
-positive image
 chaos
-quill and ink
-ink well
-first draft
-final draft
 crayon
 implement
 bingo
@@ -84,7 +70,6 @@ clipping
 etching
 zinc
 wax
-printing press
 vat
 facade
 unreal
@@ -92,7 +77,6 @@ fauve
 vibrant
 font
 typeface
-vanishing point
 frame
 gelatin
 curvature
@@ -128,7 +112,6 @@ muse
 obelisk
 pyramid
 opaque
-open source
 organic
 palette
 panel
@@ -141,7 +124,6 @@ satire
 silkscreen
 solvent
 stencil
-strobe light
 subconscious
 subject
 suburb
@@ -160,14 +142,12 @@ airbrush
 beeswax
 bristol
 carnation
-cross-hatch
 fresco
 glaze
 medium
 miniature
 humpback
 hunchback
-wood pulp
 ragtime
 papyrus
 parchment
@@ -208,7 +188,6 @@ transept
 crypt
 cupola
 curtain
-gate cushion
 cusp
 dome
 doric
@@ -240,11 +219,8 @@ portal
 vault
 stable
 afterimage
-
 pirouette
 sparkler
-
 watercolor
 3D
 2D
-

@@ -11,8 +11,6 @@ Accelerando
 accent
 accompaniment
 acoustic
-acoustic bass
-acoustic guitar
 Adagio
 Agitato
 al capo
@@ -34,21 +32,17 @@ ballet
 baritone
 Baroque
 bass
-bass drum
 bassline
 bassoon
 Batterie
 Beat
 bellicoso
 Bells
-bird's eye
-black keys
 bluegrass
 bolero
 bowing
 brass
 bridge
-broken chord
 Cadence
 Cadenza
 Canon
@@ -71,7 +65,6 @@ clarinet
 Classical
 Clavier
 Clef
-close curtains
 Coda
 coloratura
 colossale
@@ -88,12 +81,8 @@ Counterpoint
 country
 credo
 Crescendo
-cut time
 Cycle
 cymbal
-da capo
-Da Capo
-dal segno
 dance
 decrescendo
 delicato
@@ -101,25 +90,16 @@ devoto
 diminuative
 Dissonance
 distortion
-dive bomb
-divertimento
-Divertimento
 dolce
 dolcissimo
-double bass
-double dot
-double stop
 downtempo
 Drone
 drum
-Drum kit
-duck walk
 Duet
 dynamic
 echo
 effect
-electric bass
-electric guitar
+electric 
 Elegy
 embellishment
 Encore
@@ -167,22 +147,18 @@ giusto
 glee
 Glissando
 Glockenspiel
-grace note
 Grandioso
-grand pause
 Grave
 grazioso
 guerriero
 guitar
 gustoso
-half time
 hammeron
 harmonic
 Harmony
 harp
 harpsichord
 headstock
-heavy metal
 hemiloa
 horn
 humbucker
@@ -198,13 +174,9 @@ Interpretation
 Interval
 intimo
 irato
-ivory keys
 jazz
-jazz fusion
-jingle jangle
 key
 keyboard
-Key Signature
 Klavier
 lacrimoso
 lagrimoso
@@ -233,7 +205,6 @@ Madrigal
 Maestro
 magico
 magnifico
-magnum opus
 Major
 mancando
 marcato
@@ -251,9 +222,6 @@ melancolico
 melisma
 metronome
 Mezzo
-mezzo forte
-mezzo piano
-mezzo-soprano
 Minuet
 misterioso
 Modes
@@ -270,7 +238,6 @@ noblezza
 Nocturne
 Notation
 Note
-nylon string
 obbligato
 oboe
 Octave
@@ -285,13 +252,11 @@ ottava
 overdrive
 Overture
 palette
-palm mute
 parlando
 parlante
 Parody
 Part
 Partita
-patch cable
 percussion
 Phrase
 Piano
@@ -309,15 +274,12 @@ polyphony
 pomposo
 pop
 potpourri
-power chord
 Prelude
 prestissimo
 Presto
-prima volta
 programme
 Progression
 psalm
-pull-off
 Quartet
 Quintet
 radio
@@ -363,11 +325,9 @@ shred
 silenzio
 simile
 six string
-slap bass
 Slide
 Slur
 snare
-snare drum
 sognando
 Sonata
 Song
@@ -375,24 +335,16 @@ sonoro
 Soprano
 soul
 soundboard
-sound hole
 speaker
-special effect
 spiccato
 Staccato
 Staff
-stage hand
-steel guitar
-steel string
 stornello
 stretto
 strings
 subito
 subwoofer
 Suite
-surround sound
-sustain pedal
-swing note
 Symphony
 syncopation
 Synthesizer
@@ -433,9 +385,7 @@ truss rod
 tuba
 Tune
 Tutti
-twelve string
 Unison
-vacuum tube
 venue
 Vibraphone
 vibration
@@ -445,14 +395,8 @@ Violincello
 Virtuoso
 Vivace
 Voice
-volume swell
 vox
 Waltz
-whammy bar
-white keys
-Whole note
-Whole tone
-Wood block
 woodwind
 woofer
 Xylophone

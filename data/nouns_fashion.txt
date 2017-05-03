@@ -33,8 +33,6 @@ buttonhole
 cap
 slipper
 embroidery
-fashion show
-in style
 braid
 polyester
 acrylic
@@ -44,28 +42,18 @@ fedora
 visor
 sheer
 hem
-evening gown
-wedding dress
 lace
 knotting
 needlepoint
 thread
 makeup
-high heel
 pleat
 zipper
 seam
-tie dye
-basket weave
-zig zag
 yarn
 tailor
-casting call
 model
-lights camera
-open house
 catwalk
-photo finish
 pocket
 yoke
 bedazzled
@@ -74,4 +62,3 @@ retro
 Herringbone
 Filigree
 hemline
-high heel

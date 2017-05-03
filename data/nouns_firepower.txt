@@ -19,7 +19,6 @@ lantern
 lazer
 napalm
 pyre
-rocket fuel
 shrapnel
 smoke
 spark

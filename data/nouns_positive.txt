@@ -1,4 +1,3 @@
-
 ability
 abundance
 acclaim
@@ -114,7 +113,8 @@ hope
 hurrah
 idea
 illumination
-incandescenceinfinity
+incandescence
+infinity
 innovation
 insight
 inspiration
