@@ -30,7 +30,6 @@ fix
 fly
 fry
 gab
-gag
 gas
 gel
 get
@@ -54,7 +53,6 @@ mod
 nab
 nag
 nap
-nip
 paw
 ply
 pop
@@ -103,7 +101,6 @@ bank
 bark
 bathe
 beg
-behave
 bellow
 bend
 bite
@@ -216,7 +213,6 @@ howl
 huff
 hunt
 hurry
-incline
 injure
 jab
 jet
@@ -227,7 +223,6 @@ lapse
 lay
 lead
 lean
-learn
 lick
 lift
 listen
@@ -264,7 +259,6 @@ plod
 plummet
 plunge
 point
-poop
 post
 practice
 praise
@@ -275,7 +269,6 @@ provide
 pull
 race
 reach
-rear
 reinforce
 respond
 rest
@@ -319,12 +312,7 @@ slant
 slide
 slip
 slope
-slug
 smash
-smell
-sniff
-snooze
-snort
 snuggle
 soar
 sock
@@ -332,7 +320,6 @@ spay
 speed
 spin
 splash
-spoil
 spook
 spot
 spring

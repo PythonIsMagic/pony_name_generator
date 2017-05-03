@@ -17,7 +17,6 @@ all
 any
 apt
 ash
-athletic
 attached
 bah
 big
@@ -64,9 +63,8 @@ fruity
 funny
 furry
 fuzzy
-gay
-gee
 giant
+colossal
 glad
 glass       
 gleaming
@@ -108,7 +106,6 @@ muddy
 mum
 murky
 nay
-nee
 neo
 new
 nil

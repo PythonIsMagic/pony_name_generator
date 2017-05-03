@@ -10,10 +10,8 @@ cocky
 cold
 crazy
 broke
-adverse
 aggressive
 agony
-allergic
 angry
 anguish
 annoying
@@ -192,7 +190,6 @@ shy
 silly
 sinister
 skittish
-smelly
 sneaky
 sorrow
 sorrowful

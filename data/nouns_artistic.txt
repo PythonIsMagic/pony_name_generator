@@ -160,17 +160,14 @@ mastic
 dammar
 abacus
 abbey
-aeolic
 aisle
 acropolis
 altar
 apex
 arcade
 arch
-atrium
 attic
 basilica
-buttress
 canopy
 cantilever
 chapel

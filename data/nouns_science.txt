@@ -113,7 +113,6 @@ scroll
 thesaurus
 tract
 treatise
-treaty
 booklet
 bill
 balance
@@ -140,7 +139,6 @@ catalogue
 file
 hoard
 item
-itemize
 record
 roster
 schedule
@@ -150,8 +148,7 @@ summary
 table
 flyer
 edition
-bibliophile
-intellectual
+intellect
 reader
 scholar
 bookworm
@@ -220,7 +217,6 @@ battery
 refridgerator
 oven
 enterprise
-operatice
 practice
 probe
 research
@@ -235,7 +231,6 @@ goal
 objective
 seek
 audit
-canvass
 diagnosis
 exam
 exploration
@@ -262,7 +257,6 @@ inference
 premise
 proposition
 ration
-rationale
 theorem
 theory
 thesis

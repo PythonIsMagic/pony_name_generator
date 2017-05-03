@@ -62,7 +62,6 @@ bonanza
 bogus
 orchard
 boodle
-bosh
 dollar
 penny
 nickel
@@ -153,8 +152,7 @@ skulduggery
 slangander
 slicker
 molasses
-sourdough
-spendiferous
+splendiferous
 squatter
 squinny
 squaddle
@@ -165,7 +163,6 @@ counterfeit
 stretcher
 charcoal
 taffy
-taint
 trough
 tally
 tallow

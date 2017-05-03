@@ -47,7 +47,6 @@ pine
 pink        
 plastic
 platinum  
-poplar
 puce 
 purple
 red

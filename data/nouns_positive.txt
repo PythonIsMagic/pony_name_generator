@@ -68,7 +68,8 @@ exquisite
 fame
 fancy
 fantasia
-fantasyfascination
+fantasy
+fascination
 favorite
 felicity
 ferocity
@@ -89,7 +90,8 @@ genius
 giant
 gift
 giggle
-glamourgleam
+glamour
+gleam
 glimmer
 glint
 glisten
