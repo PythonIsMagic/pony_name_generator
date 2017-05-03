@@ -1,12 +1,26 @@
 """ namegen.py
     Generates random and interesting pony names.
 """
+
 import os
+import random
 DATA_DIR = 'data'
+
+categories = [
+    ('nouns', 'nouns'),
+    ('nouns', 'verbs'),
+    ('verbs', 'nouns'),
+    ('adj', 'nouns'),
+    ('adj', 'verbs'),
+]
 
 
 def get_name(word_dict):
     """ Creates a random name from a dictionary. """
+    choice = random.choice(categories)
+    # print(choice)
+    words = [random.choice(word_dict[c]) for c in choice]
+    return ' '.join(words)
 
 
 def scan_files(prefix):
@@ -22,7 +36,7 @@ def scan_files(prefix):
                 if w:
                     words.append(w.strip())
 
-    return set(words)
+    return list(set(words))
 
 
 def import_words():
@@ -36,7 +50,7 @@ def import_words():
     # Create the dict
     word_dict = {}
     word_dict['nouns'] = nouns
-    word_dict['adjs'] = adjs
+    word_dict['adj'] = adjs
     word_dict['verbs'] = verbs
     return word_dict
 
@@ -45,6 +59,12 @@ def main():
     """ Main run loop """
     print("Welcome to Erik's Pony Name Generator!")
     word_dict = import_words()
+    qty = 500
+    x = 0
+    while x < qty:
+        name = get_name(word_dict)
+        print(name)
+        x += 1
 
 
 if __name__ == "__main__":
