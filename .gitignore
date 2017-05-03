@@ -2,6 +2,7 @@
 # Directories
 # -----------
 .ropeproject/*
+data/.ropeproject/*
 .cache/*
 __pycache__/*
 arc/*

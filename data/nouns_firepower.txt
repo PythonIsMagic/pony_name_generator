@@ -1,10 +1,4 @@
-lazer
-gun
 barrel
-tech
-rocket fuel
-gunshot
-shrapnel
 beam
 blaze
 bonfire
@@ -18,9 +12,15 @@ flare
 flash
 flicker
 fury
+gun
+gunshot
 heat
 lantern
+lazer
+napalm
 pyre
+rocket fuel
+shrapnel
 smoke
 spark
-napalm
+tech
