@@ -34,7 +34,7 @@ def scan_files(prefix):
         with open(f, 'r') as wf:
             for w in wf.readlines():
                 if w:
-                    words.append(w.strip())
+                    words.append(w.strip().title())
 
     return list(set(words))
 
@@ -59,7 +59,7 @@ def main():
     """ Main run loop """
     print("Welcome to Erik's Pony Name Generator!")
     word_dict = import_words()
-    qty = 500
+    qty = 10
     x = 0
     while x < qty:
         name = get_name(word_dict)
