@@ -1,3 +1,4 @@
+
 ability
 abundance
 acclaim
@@ -32,9 +33,9 @@ cherish
 clairvoyance
 comfort
 command
+compassion
 compliment
 confirmation
-compassion
 courage
 daydream
 dazzle
@@ -64,7 +65,6 @@ exalt
 excitment
 express
 exquisite
-
 fame
 fancy
 fantasia
@@ -76,7 +76,6 @@ ferocity
 fervor
 fidelity
 filament
-
 finesse
 flight
 flourish
@@ -101,7 +100,6 @@ glory
 gloss
 glow
 godsend
-
 grace
 grandeur
 gratuity
@@ -124,19 +122,16 @@ intensity
 intention
 intuition
 invention
-
 justice
 kindness
 kinglaugh
 laughter
 lavish
 leader
-
 levitation
 libertylove
 loyalty
 luminosity
-
 luxury
 magnetism
 master
@@ -155,7 +150,6 @@ presence
 princess
 progress
 promise
-
 quality
 radiancerealize
 reason
@@ -167,7 +161,6 @@ relief
 renew
 resplendence
 reward
-
 romance
 salvation
 serene
@@ -203,9 +196,9 @@ vivid
 vividness
 warmth
 wealth
+wide
 windfall
 wisdom
 wish
 wonder
-wide
 zealous

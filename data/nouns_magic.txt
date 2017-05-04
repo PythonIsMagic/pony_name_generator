@@ -1,17 +1,17 @@
-arcane
+
 altar 
+arcane
+fairy
+illusion
 incantation
-solution
+magic
 mumbo jumbo
+mystic
 prophecy
 rune
+solution
 sorcery
+soul
 spell
 zap
 zodiac
-illusion
-fairy
-soul
-
-magic
-mystic

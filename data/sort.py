@@ -14,15 +14,13 @@ def main():
         print('Sorting {}'.format(f))
     # sort -u -o adjectives_negative.txt adjectives_negative.txt
 
-    cmd = ['sort', '-u', '-o', f, f]
+        cmd = ['sort', '-u', '-o', f, f]
 
-    try:
-        p = subprocess.Popen(cmd)
-        p.wait()
-        return True
-    except OSError as e:
-        if e.errno == os.errno.ENOENT:
-            return False
+        try:
+            p = subprocess.Popen(cmd)
+            p.wait()
+        except OSError as e:
+            print(e)
 
 if __name__ == "__main__":
     main()

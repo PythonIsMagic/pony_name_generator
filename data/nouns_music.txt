@@ -1,12 +1,4 @@
 A cappella
-accent
-drum
-jazz
-movement
-opera
-rhapsody
-rhythm
-waltz
 Accelerando
 accent
 accompaniment
@@ -228,6 +220,7 @@ Monotone
 mordent
 morendo
 Motif
+movement
 Movement
 Natural
 Nocturne
@@ -237,6 +230,7 @@ oboe
 Octave
 Octet
 ode
+opera
 Opera
 Orchestra
 organ
@@ -267,9 +261,9 @@ potpourri
 Prelude
 prestissimo
 Presto
+program
 Progression
 psalm
-program
 Quartet
 Quintet
 radio
@@ -284,6 +278,7 @@ Requiem
 Resonance
 resonator
 rhapsody
+rhythm
 Rhythm
 ridicolo
 riff
@@ -384,6 +379,7 @@ Violincello
 Virtuoso
 Vivace
 Voice
+waltz
 Waltz
 woodwind
 woofer
