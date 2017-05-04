@@ -1,4 +1,3 @@
-
 Alfalfa
 ambush
 arrowhead
@@ -67,7 +66,6 @@ flank
 flatlander
 frolic
 gallows
-gin
 gnarled
 hangman
 haybale
@@ -75,7 +73,6 @@ hocks
 hoodlum
 informer
 iron
-Iron
 jerky
 jigger
 Jugful

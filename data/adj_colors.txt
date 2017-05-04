@@ -2,7 +2,6 @@
 alloy
 aluminum
 amber
-ash
 balsa 
 basswood
 black 
@@ -40,26 +39,23 @@ maple
 maple       
 marble 
 nickel alloy
-oak 
 orange 
 pearl
 pine
 pink        
 plastic
 platinum  
+blood
 puce 
 purple
-red
 redwood
 rosewood
-ruby 
 silver   
 sky-blue 
 steel
 stone
 strawberry 
 sulphur 
-tin 
 uranium  
 white  
 yellow 

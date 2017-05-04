@@ -1,11 +1,9 @@
-A cappella
 Accelerando
 accent
 accompaniment
 acoustic
 Adagio
 Agitato
-al capo
 Allegro
 altissimo
 alto
@@ -94,7 +92,6 @@ embellishment
 Encore
 Ensemble
 equalizer
-eroico
 espressivo
 Etude
 euphonium
@@ -113,7 +110,7 @@ flugelhorn
 flute
 focoso
 folk
-FOrm
+Form
 Forte
 Fortissimo
 fortississimo
@@ -164,7 +161,6 @@ Interval
 intimo
 irato
 jazz
-key
 keyboard
 Klavier
 lacrimoso
@@ -229,7 +225,6 @@ Note
 oboe
 Octave
 Octet
-ode
 opera
 Opera
 Orchestra
@@ -256,7 +251,6 @@ poetico
 polka
 polonaise
 polyphony
-pop
 potpourri
 Prelude
 prestissimo
@@ -365,7 +359,6 @@ Triple
 Tritone
 trombone
 trumpet
-truss rod
 tuba
 Tune
 Tutti
@@ -375,12 +368,10 @@ Vibraphone
 vibration
 Viola
 violin
-Violincello
 Virtuoso
 Vivace
 Voice
 waltz
 Waltz
 woodwind
-woofer
 Xylophone

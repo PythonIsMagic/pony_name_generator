@@ -1,13 +1,11 @@
 acrylic
 apparel
-bag
 bedazzled
 blush
 bonnet
 boots
 braid
 buttonhole
-cap
 catwalk
 chaps
 coat
@@ -20,11 +18,9 @@ fedora
 Filigree
 flair
 garment
-gem
 glitter
 glove
 handbag
-hem
 hemline
 Herringbone
 jewel
@@ -44,7 +40,6 @@ retro
 ring
 satin
 seam
-sew
 sewn
 sheer
 shoe

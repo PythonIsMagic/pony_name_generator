@@ -12,7 +12,6 @@ flare
 flash
 flicker
 fury
-gun
 gunshot
 heat
 lantern

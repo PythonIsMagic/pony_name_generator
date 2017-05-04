@@ -2,7 +2,6 @@
 apple
 butter
 carrot
-cob 
 cracker 
 crumb
 curry 

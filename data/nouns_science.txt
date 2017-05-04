@@ -3,7 +3,6 @@ abstract
 account
 accounts
 acid
-aim
 album
 alchemy
 almanac
@@ -116,7 +115,6 @@ guess
 handobok
 hardcover
 hoard
-hot plate
 hunch
 hyperlink
 hypothesis
@@ -139,7 +137,6 @@ itinerary
 journal
 judge
 keyword
-lab
 late fee
 leaflet
 lease
@@ -154,7 +151,6 @@ magazine
 magnet
 magnify
 manual
-map
 measure
 medicine
 method
@@ -247,7 +243,6 @@ survey
 symmetry
 synergy
 system
-tab
 table
 tally
 teacher
