@@ -13,6 +13,11 @@ flash
 flicker
 fury
 gunshot
+cannon
+nitroglycerine
+rifle
+blaze
+peacemaker
 heat
 lantern
 lazer
