@@ -8,11 +8,12 @@ import random
 DATA_DIR = 'data'
 
 categories = [
-    ('nouns', 'nouns'),
-    ('nouns', 'verbs'),
-    # ('verbs', 'nouns'),
-    ('adj', 'nouns'),
-    ('adj', 'verbs'),
+    ('nouns', None, 'nouns'),
+    ('nouns', None, 'verbs'),
+    ('verbs', None, 'nouns'),
+    ('adj', None, 'nouns'),
+    ('adj', None, 'verbs'),
+    ('verbs', '3letter'),
 ]
 
 
@@ -20,8 +21,13 @@ def get_name(word_dict):
     """ Creates a random name from a dictionary. """
     choice = random.choice(categories)
     # print(choice)
-    words = [random.choice(word_dict[c]) for c in choice]
-    return ' '.join(words)
+    words = []
+    for c in choice:
+        if c:
+            words.append(random.choice(word_dict[c]))
+        else:
+            words.append(' ')
+    return ''.join(words).title()
 
 
 def scan_files(prefix):
@@ -36,7 +42,7 @@ def scan_files(prefix):
         with open(f, 'r') as wf:
             for w in wf.readlines():
                 if w:
-                    words.append(w.strip().title())
+                    words.append(w.strip())
 
     return list(set(words))
 
@@ -48,12 +54,14 @@ def import_words():
     nouns = scan_files('nouns')  # Get nouns
     adjs = scan_files('adj')  # Get adjectives
     verbs = scan_files('verb')  # Get verbs
+    words3letter = scan_files('3letter')
 
     # Create the dict
     word_dict = {}
     word_dict['nouns'] = nouns
     word_dict['adj'] = adjs
     word_dict['verbs'] = verbs
+    word_dict['3letter'] = words3letter
     return word_dict
 
 
