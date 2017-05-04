@@ -28,10 +28,11 @@ def scan_files(prefix):
     """ Gets all words from all files ending in the specified prefix and returns
         them as a list.
     """
-    files = ['/'.join([DATA_DIR, f]) for f in os.listdir("data") if f.startswith(prefix)]
-    # Collect all the words from the files
+    files = ['/'.join([DATA_DIR, f]) for f in os.listdir(DATA_DIR) if f.startswith(prefix)]
+
     words = []
     for f in files:
+        print('Scanning {}'.format(f))
         with open(f, 'r') as wf:
             for w in wf.readlines():
                 if w:
@@ -61,6 +62,9 @@ def setup_parser():
 
     parser.add_argument('qty', type=int,
                         help="The number of pony names to generate.")
+
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help="Search Trello for serial numbers.")
     return parser
 
 
