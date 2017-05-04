@@ -9,6 +9,7 @@ angel
 angelic
 assertive
 astonishing
+Audacious
 awesome
 beautiful
 belief
@@ -151,8 +152,6 @@ supreme
 sure
 sweet
 swell
-Audacious
-sublime
 talented
 tall
 tough

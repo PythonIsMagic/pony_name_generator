@@ -1,5 +1,4 @@
 abused
-counterfeit
 afraid
 aggressive
 agony
@@ -29,6 +28,7 @@ clingy
 clumsy
 cocky
 corrupt
+counterfeit
 crazy
 damnable
 dangerous

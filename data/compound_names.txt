@@ -1,29 +1,10 @@
 
 50 calibur
-mumbo jumbo
-A cappella
 above board
-al capo
-hot plate
-steam power
-still life
-bass line
-downtempo
-fingerpick
-six string
-soundboard
-flashcard
-footnote
-hardcover
-hyperlink
-keyword
-late fee
-search term
-textbook
-showoff
-showstop
+A cappella
 Ace High
 Ace in the hole
+al capo
 avante-garde
 Axle grease
 bad box
@@ -36,6 +17,7 @@ barking irons
 barrel fever
 barrel rider
 basket weave
+bass line
 bat wings
 bean eater
 bed bug
@@ -70,6 +52,7 @@ Divertimento
 double bass
 double dot
 double stop
+downtempo
 dream book
 Drum kit
 duck walk
@@ -80,22 +63,30 @@ evening gown
 eye dropper
 fashion show
 final draft
+fingerpick
 first draft
+flashcard
+footnote
 gold rush
 grace note
 graduated cylinder
 grand pause
 half time
+hardcover
 heavy metal
 high contrast
 high heel
+hot plate
+hyperlink
 ink well
 in style
 ivory keys
 jazz fusion
 jingle jangle
 Key Signature
+keyword
 lab rat
+late fee
 lead steer
 lights camera
 magnum opus
@@ -103,6 +94,7 @@ medicine dropper
 mezzo forte
 mezzo piano
 mezzo-soprano
+mumbo jumbo
 namby-pamby
 night hawk
 night herder
@@ -134,21 +126,28 @@ red eye
 rocket fuel
 safety goggles
 Salt lick
+search term
 self-portraight
 sell out
 sharp shooter
+showoff
+showstop
 Sixes and Sevens
 six shooter
+six string
 skin-flint
 slap bass
 slap-jack
 small fry
 snake out
 snare drum
+soundboard
 special effect
 stage hand
 stainless steel
 starry night
+steam power
+still life
 string-bean
 strobe light
 surround sound
@@ -157,6 +156,7 @@ swing note
 talking iron
 tee-total
 test tube
+textbook
 third degree
 tie dye
 traffic jam

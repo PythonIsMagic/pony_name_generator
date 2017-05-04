@@ -1,20 +1,18 @@
 
-feather
 beast
-flank
-rattlesnake
-rooster
+bumblebee
+buzzard
 feather
 filly
 flank
 foal
 mare
 monster
-puppies
-zephyr
-tail
-bumblebee
-buzzard
 Owl
+puppies
+rattlesnake
+rooster
 scorpian
+tail
 tarantula
+zephyr

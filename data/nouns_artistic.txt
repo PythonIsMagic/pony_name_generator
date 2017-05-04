@@ -1,5 +1,6 @@
 2D
 3D
+acrylic
 afterimage
 airbrush
 animation
@@ -56,6 +57,7 @@ landscape
 lantern
 manifesto
 mastic
+matte
 medium
 miniature
 mirror
@@ -84,8 +86,6 @@ plume
 plywood
 polygon
 portrait
-acrylic
-matte
 render
 replica
 revolution

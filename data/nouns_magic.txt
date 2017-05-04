@@ -1,21 +1,21 @@
 
-curse
 altar 
 arcane
+curse
 fairy
 illusion
 incantation
 magic
-mystic
 mandala
+mystic
 poppet
 portal
 prophecy
-teleport
 rune
 solution
 sorcery
 soul
 spell
+teleport
 zap
 zodiac

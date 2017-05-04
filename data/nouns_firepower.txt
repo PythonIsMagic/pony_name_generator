@@ -4,6 +4,7 @@ blaze
 bonfire
 burst
 candle
+cannon
 fire
 fireball
 firebolt
@@ -13,16 +14,14 @@ flash
 flicker
 fury
 gunshot
-cannon
-nitroglycerine
-rifle
-blaze
-peacemaker
 heat
 lantern
 lazer
 napalm
+nitroglycerine
+peacemaker
 pyre
+rifle
 shrapnel
 smoke
 spark

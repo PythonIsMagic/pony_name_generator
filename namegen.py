@@ -32,7 +32,7 @@ def scan_files(prefix):
 
     words = []
     for f in files:
-        print('Scanning {}'.format(f))
+        # print('Scanning {}'.format(f))
         with open(f, 'r') as wf:
             for w in wf.readlines():
                 if w:

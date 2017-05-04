@@ -187,10 +187,7 @@ twinkle
 upgrade
 utopia
 valor
-charm
-courage
 venture
-illumination
 victory
 vigor
 vision

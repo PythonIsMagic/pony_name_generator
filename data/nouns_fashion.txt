@@ -6,9 +6,11 @@ braid
 button
 catwalk
 chaps
+chevron
 coat
 collar
 crown
+curtain
 design
 embroidery
 fabric
@@ -24,6 +26,7 @@ lace
 makeup
 model
 necklace
+necktie
 needlepoint
 pattern
 pleat
@@ -46,9 +49,6 @@ textile
 thread
 tiara
 visor
+wardrobe
 yarn
 zipper
-chevron
-curtain
-necktie
-wardrobe

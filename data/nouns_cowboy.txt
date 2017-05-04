@@ -3,7 +3,9 @@ arrowhead
 backdoor
 backseat
 balderdash
+bale
 ballast
+barrel
 bazoo
 bellyache
 belvidere
@@ -15,8 +17,10 @@ bonanza
 boodle
 bottleneck
 brash
+bridle
 brittle
 broomtail
+bucket
 bulldozer
 bushwhacker
 bustle
@@ -36,6 +40,7 @@ hocks
 hoodlum
 informer
 jugful
+leather
 nibbler
 nipper
 nobby
@@ -57,6 +62,8 @@ rattler
 rawhide
 rosin
 roundup
+saddle
+saddlebags
 scallywag
 screwloose
 skedaddle
@@ -74,14 +81,7 @@ stirrup
 stretcher
 tallow
 tarnation
-barrel
-bale
-bridle
-bucket
 tenderfoot
-leather
-saddle
-saddlebags
 toothpick
 trough
 varmint

@@ -1,14 +1,7 @@
+abacus
 account
 acid
 album
-binoculars
-abacus
-module
-ratio
-receipt
-solvent
-tally
-periscope
 alchemy
 almanac
 analysis
@@ -25,6 +18,7 @@ battery
 beaker
 bible
 bill
+binoculars
 bond
 book
 booklet
@@ -40,8 +34,8 @@ codex
 colon
 comma
 comment
-compound
 compendium
+compound
 computation
 conclusion
 condition
@@ -54,8 +48,8 @@ data
 debate
 deduction
 diagnosis
-dictionary
 dial
+dictionary
 disciple
 discovery
 edition
@@ -97,6 +91,7 @@ interrogate
 inventory
 investigation
 invoice
+ion
 item
 leaflet
 lease
@@ -117,6 +112,7 @@ microfiche
 microfilm
 microscope
 mixer
+module
 monograph
 notion
 novel
@@ -130,6 +126,7 @@ page
 pamphlet
 paragraph
 period
+periscope
 portfolio
 practice
 precision
@@ -146,10 +143,12 @@ query
 quest
 questionnaire
 quiz
+ratio
 ration
 reader
 readout
 reason
+receipt
 record
 reference
 remark
@@ -169,6 +168,7 @@ seek
 semicolon
 sentence
 slide
+solvent
 sound
 specimen
 stopper
@@ -195,4 +195,3 @@ volume
 work
 writing
 xray
-ion
