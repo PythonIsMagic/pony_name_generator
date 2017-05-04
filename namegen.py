@@ -2,6 +2,7 @@
     Generates random and interesting pony names.
 """
 
+import argparse
 import os
 import random
 DATA_DIR = 'data'
@@ -55,13 +56,23 @@ def import_words():
     return word_dict
 
 
+def setup_parser():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('qty', type=int,
+                        help="The number of pony names to generate.")
+    return parser
+
+
 def main():
     """ Main run loop """
     print("Welcome to Erik's Pony Name Generator!")
+    parser = setup_parser()
+    args = parser.parse_args()
+
     word_dict = import_words()
-    qty = 10
     x = 0
-    while x < qty:
+    while x < args.qty:
         name = get_name(word_dict)
         print(name)
         x += 1
