@@ -1,8 +1,4 @@
-
-Alfalfa
 apple
-bacon
-beef
 beer
 beeswax
 biscuit
@@ -24,10 +20,9 @@ jerky
 jigger
 lager
 lemon
-molasses
 morsel
 nutcracker
-oats
+oat
 oven
 pancake
 saccharin

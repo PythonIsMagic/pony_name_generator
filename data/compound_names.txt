@@ -25,6 +25,7 @@ bed-house
 bed-rock
 big guns
 bird's eye
+black hole
 black keys
 boggy top
 bow and arrow
@@ -126,6 +127,7 @@ red eye
 rocket fuel
 safety goggles
 Salt lick
+screwloose
 search term
 self-portraight
 sell out

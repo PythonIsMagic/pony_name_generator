@@ -111,6 +111,7 @@ method
 microfiche
 microfilm
 microscope
+midnight
 mixer
 module
 monograph
@@ -168,6 +169,7 @@ seek
 semicolon
 sentence
 slide
+solution
 solvent
 sound
 specimen
@@ -188,6 +190,7 @@ token
 tract
 treatise
 trial
+twilight
 twist
 venture
 view

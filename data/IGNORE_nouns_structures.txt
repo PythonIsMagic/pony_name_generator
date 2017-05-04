@@ -8,6 +8,7 @@ apothecary
 arcade
 arch
 archive
+attic
 barn
 basilica
 bastion
@@ -26,6 +27,7 @@ column
 cornice
 crypt
 cupola
+darkroom
 dome
 doric
 eave
@@ -40,6 +42,7 @@ plinth
 podium
 pulpit
 pyramid
+racetrack
 railroad
 rodeo
 saloon

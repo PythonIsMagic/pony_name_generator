@@ -10,7 +10,7 @@ DATA_DIR = 'data'
 categories = [
     ('nouns', 'nouns'),
     ('nouns', 'verbs'),
-    ('verbs', 'nouns'),
+    # ('verbs', 'nouns'),
     ('adj', 'nouns'),
     ('adj', 'verbs'),
 ]
@@ -70,7 +70,6 @@ def setup_parser():
 
 def main():
     """ Main run loop """
-    print("Welcome to Erik's Pony Name Generator!")
     parser = setup_parser()
     args = parser.parse_args()
 

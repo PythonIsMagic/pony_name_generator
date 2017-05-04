@@ -4,6 +4,7 @@ accompaniment
 adopt
 adverse
 aeolic
+alfalfa
 allergic
 aloha
 altissimo
@@ -20,12 +21,15 @@ atrium
 attachment
 audit
 baby
+bacon
 balk
 barefoot
 barehoof
 bark
 bathe
 batterie
+bazoo
+beef
 behave
 behavior
 bellicoso
@@ -45,6 +49,7 @@ castrato
 catalogue
 cavatina
 centrifuge
+checkout
 chew
 chorale
 colossale
@@ -66,6 +71,7 @@ entrust
 equalizer
 eroico
 exercise
+flatlander
 flugelhorn
 fortississimo
 freddo
@@ -73,16 +79,20 @@ fuocoso
 gate
 gaudioso
 gentile
+girth
 giusto
 graduation
 guerriero
 gustoso
+hangman
 headstock
 hemiloa
 hemline
 herringbone
+hoodlum
 humbucker
 incline
+informer
 intellectual
 interpretation
 itemize
@@ -103,6 +113,7 @@ mancando
 martellato
 marziale
 matchmaker
+mate
 melancolico
 melisma
 mordent
@@ -114,6 +125,8 @@ obbligato
 operatice
 ottava
 outland
+owdacious
+owner
 painting
 pamper
 paperback
@@ -121,6 +134,7 @@ parlando
 parlante
 Partita
 periodical
+perty
 pianoforte
 pipette
 piss
@@ -128,6 +142,7 @@ poetico
 pomposo
 poop
 poplar
+positude
 postulate
 prestissimo
 programme
@@ -149,6 +164,7 @@ scatenato
 scholar
 science
 sentimento
+sewn
 slug
 smell
 smelly
@@ -180,10 +196,12 @@ thesaurus
 thesis
 tonal
 tonality
+tracery
 treaty
 truss rod
 venus
 Violincello
 wagon
+welfare
 whoa
 woofer

@@ -6,6 +6,8 @@ feather
 filly
 flank
 foal
+ghost
+ghoul
 mare
 monster
 Owl

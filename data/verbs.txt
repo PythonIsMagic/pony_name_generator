@@ -186,6 +186,7 @@ shout
 show
 shriek
 sink
+sizzle
 skid
 skim
 skip

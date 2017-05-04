@@ -1,6 +1,5 @@
 
 altar 
-arcane
 curse
 fairy
 illusion
@@ -12,9 +11,9 @@ poppet
 portal
 prophecy
 rune
-solution
 sorcery
 soul
+specter
 spell
 teleport
 zap

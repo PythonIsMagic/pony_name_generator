@@ -6,14 +6,19 @@ agile
 alert
 alpha
 amusing
+arcane
 attached
 base
+bedazzled
 beta
 binary
 bizarre
 blazing
+bogus
 bolting
+brash
 brindle
+brittle
 browser
 bubbly
 buffer
@@ -65,6 +70,7 @@ giant
 glad
 glass       
 gleaming
+gnarly
 groovy
 grotesque
 hard
@@ -89,6 +95,7 @@ lone
 long        
 lost
 lusty
+matte
 mellow
 mild
 milky  
@@ -96,8 +103,12 @@ miniature
 moving
 muddy
 murky
+opaque
+organic
 painted
+pale
 pampered
+papyrus
 precise
 quiet
 reverent
@@ -105,6 +116,7 @@ rowdy
 runed       
 sassy
 savory
+sheer
 shimmering
 shiny
 short       
@@ -117,8 +129,11 @@ soft
 solar
 spangled
 sparkling
+spatial
 spiked      
+splendiferous
 spotted
+stancheous
 subconscious
 swirly          
 theta
@@ -135,6 +150,7 @@ viable
 vibrant
 water
 western
+winsome
 young
 yummy
 zinc
