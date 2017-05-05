@@ -13,18 +13,67 @@ categories = [
     ('verbs', None, 'nouns'),
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
-    ('verbs', '3letter'),
+    ('verbs', '3letter', None, 'nouns'),
 ]
+
+exceptions = {
+    'roof': 'roofs',
+    'belief': 'beliefs',
+    'chef': 'chefs',
+    'chief': 'chiefs',
+    'gas': 'gasses',
+    'fez': 'fezzes',
+    'photo': 'photos',
+    'piano': 'pianos',
+    'halo': 'halos',
+    'tooth': 'teeth',
+    'mouse': 'mice',
+}
+
+
+def pluralize_noun(n):
+    """ Takes a noun and turns it into it's plural form """
+
+    if n.endswith('us'):
+        return n[:-2] + 'i'
+    elif n.endswith('is'):
+        return n[:-2] + 'es'
+    elif n.endswith(('s', 'ss', 'sh', 'ch', 'x', 'z', 'o')):
+        return n + 'es'
+    elif n.endswith('f'):
+        return n[:-1] + 'ves'
+    elif n.endswith('fe'):
+        return n[:-2] + 'ves'
+    elif n.endswith('tion'):
+        return n + 's'
+    elif n.endswith('on'):
+        return n[:-2] + 'a'
+    elif n.endswith('y') and n[-2] in 'bcdfghjklmnpqrstvwxz':
+        return n[:-1] + 'ies'
+    else:
+        return n + 's'
 
 
 def get_name(word_dict):
     """ Creates a random name from a dictionary. """
     choice = random.choice(categories)
-    # print(choice)
     words = []
     for c in choice:
         if c:
-            words.append(random.choice(word_dict[c]))
+            word = random.choice(word_dict[c])
+            if c == 'nouns':
+                # 2 in 5 chance it's plural
+                if word not in word_dict['abstract_nouns'] and random.randint(1, 5) <= 2:
+                    word = pluralize_noun(word)
+            if c == 'verbs':
+                pass
+                # Example: walk
+                # 1 in 10 chance it's simple present tense: walk
+                # 1 in 10 chance it's present tense: walks
+                # 1 in 10 chance it's present continuous: walking
+                # 1 in 10 chance it's past perfect tense: walked
+
+            words.append(word)
         else:
             words.append(' ')
     return ''.join(words).title()
@@ -51,13 +100,14 @@ def import_words():
     """ Collects all the words from the data files.
         Creates a dictionary of nouns, verbs, and adjectives.
     """
-    nouns = scan_files('nouns')  # Get nouns
-    adjs = scan_files('adj')  # Get adjectives
-    verbs = scan_files('verb')  # Get verbs
+    nouns = scan_files('nouns')
+    abstract_nouns = scan_files('nouns_abstract')
+    adjs = scan_files('adj')
+    verbs = scan_files('verb')
     words3letter = scan_files('3letter')
 
-    # Create the dict
     word_dict = {}
+    word_dict['abstract_nouns '] = abstract_nouns
     word_dict['nouns'] = nouns
     word_dict['adj'] = adjs
     word_dict['verbs'] = verbs
