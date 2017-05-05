@@ -2,6 +2,7 @@
 abbey
 academy
 acropolis
+chamber
 aisle
 altar
 apothecary
