@@ -3,6 +3,7 @@
 """
 
 import argparse
+import nltk
 import os
 import random
 import sys
@@ -15,6 +16,8 @@ categories = [
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
     ('verbs', '3letter', None, 'nouns'),
+    ('nouns', None, 'rhyme'),
+    ('verbs', None, 'rhyme'),
 ]
 
 exceptions = {
@@ -75,6 +78,30 @@ def pluralize_noun(n):
         return n + 's'
 
 
+def rhyme(inp, level):
+    entries = nltk.corpus.cmudict.entries()
+    syllables = [(word, syl) for word, syl in entries if word == inp]
+    rhymes = []
+    for (word, syllable) in syllables:
+            rhymes += [word for word, pron in entries if pron[-level:] == syllable[-level:]]
+    return set(rhymes)
+
+
+def doTheyRhyme(word1, word2):
+    # first, we don't want to report 'glue' and 'unglue' as rhyming words
+    # those kind of rhymes are LAME
+    if word1.find(word2) == len(word1) - len(word2):
+        return False
+    if word2.find(word1) == len(word2) - len(word1):
+        return False
+
+    return word1 in rhyme(word2, 1)
+
+
+def find_rhyme(word):
+    """ Finds a word that rhyhms with the given word."""
+
+
 def get_name(word_dict):
     """ Creates a random name from a dictionary. """
     choice = random.choice(categories)
@@ -86,13 +113,15 @@ def get_name(word_dict):
                 # 2 in 5 chance it's plural
                 if word not in word_dict['abstract_nouns'] and random.randint(1, 5) <= 2:
                     word = pluralize_noun(word)
-            if c == 'verbs':
+            elif c == 'verbs':
                 pass
                 # Example: walk
                 # 1 in 10 chance it's simple present tense: walk
                 # 1 in 10 chance it's present tense: walks
                 # 1 in 10 chance it's present continuous: walking
                 # 1 in 10 chance it's past perfect tense: walked
+            elif c == 'rhyme':
+                word = find_rhyme(words[0])
 
             words.append(word)
         else:
