@@ -5,6 +5,7 @@
 import argparse
 import os
 import random
+import sys
 DATA_DIR = 'data'
 
 categories = [
@@ -29,6 +30,26 @@ exceptions = {
     'tooth': 'teeth',
     'mouse': 'mice',
 }
+
+
+class ArgParser(argparse.ArgumentParser):
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+        sys.exit(2)
+
+
+def setup_parser():
+    """ The parser should either take an integer or the -i arg.
+    """
+    parser = argparse.ArgumentParser(description="Generate some pony names!")
+
+    parser.add_argument('-n', '--number', type=int,
+                        help="The number of pony names to generate.")
+
+    parser.add_argument('-i', '--interactive', action='store_true',
+                        help="Use the name generator to interactively save or blacklist names.")
+    return parser
 
 
 def pluralize_noun(n):
@@ -107,7 +128,7 @@ def import_words():
     words3letter = scan_files('3letter')
 
     word_dict = {}
-    word_dict['abstract_nouns '] = abstract_nouns
+    word_dict['abstract_nouns'] = abstract_nouns
     word_dict['nouns'] = nouns
     word_dict['adj'] = adjs
     word_dict['verbs'] = verbs
@@ -115,28 +136,27 @@ def import_words():
     return word_dict
 
 
-def setup_parser():
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument('qty', type=int,
-                        help="The number of pony names to generate.")
-
-    parser.add_argument('-v', '--verbose', action='store_true',
-                        help="Search Trello for serial numbers.")
-    return parser
-
-
 def main():
     """ Main run loop """
     parser = setup_parser()
     args = parser.parse_args()
-
     word_dict = import_words()
-    x = 0
-    while x < args.qty:
-        name = get_name(word_dict)
-        print(name)
-        x += 1
+
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
+    elif args.number:
+        for i in range(args.number):
+            name = get_name(word_dict)
+            print(name)
+
+        exit()
+
+    elif args.interactive:
+        while True:
+            name = get_name(word_dict)
+            print(name)
+            raw_input()
 
 
 if __name__ == "__main__":
