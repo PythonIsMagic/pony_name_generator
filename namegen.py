@@ -20,21 +20,6 @@ categories = [
     ('verbs', None, 'rhyme'),
 ]
 
-exceptions = {
-    'roof': 'roofs',
-    'belief': 'beliefs',
-    'chef': 'chefs',
-    'chief': 'chiefs',
-    'gas': 'gasses',
-    'fez': 'fezzes',
-    'photo': 'photos',
-    'piano': 'pianos',
-    'halo': 'halos',
-    'tooth': 'teeth',
-    'mouse': 'mice',
-}
-
-
 class ArgParser(argparse.ArgumentParser):
     def error(self, message):
         sys.stderr.write('error: %s\n' % message)
@@ -87,7 +72,7 @@ def rhyme(inp, level):
     return set(rhymes)
 
 
-def doTheyRhyme(word1, word2):
+def is_ryhme(word1, word2):
     # first, we don't want to report 'glue' and 'unglue' as rhyming words
     # those kind of rhymes are LAME
     if word1.find(word2) == len(word1) - len(word2):
