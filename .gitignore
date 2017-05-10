@@ -9,6 +9,7 @@ arc/*
 logs/*
 tests/*
 venv/*
+temp/*
 
 # -----
 # Files
