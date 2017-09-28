@@ -3,11 +3,10 @@
 """
 
 import argparse
-import nltk
 import os
 import random
 import sys
-from plurals import exceptions
+import plurals
 
 DATA_DIR = 'data'
 
@@ -41,57 +40,6 @@ def setup_parser():
     parser.add_argument('-i', '--interactive', action='store_true',
                         help="Use the name generator to interactively save or blacklist names.")
     return parser
-
-
-def pluralize_noun(n):
-    """ Takes a noun and turns it into it's plural form """
-
-    # Check exceptions first:
-    if n in exceptions:
-        return exceptions[n]
-
-    if n.endswith('us'):
-        return n[:-2] + 'i'
-    elif n.endswith('is'):
-        return n[:-2] + 'es'
-    elif n.endswith(('s', 'ss', 'sh', 'ch', 'x', 'z', 'o')):
-        return n + 'es'
-    elif n.endswith('f'):
-        return n[:-1] + 'ves'
-    elif n.endswith('fe'):
-        return n[:-2] + 'ves'
-    elif n.endswith('tion'):
-        return n + 's'
-    elif n.endswith('on'):
-        return n[:-2] + 'a'
-    elif n.endswith('y') and n[-2] in 'bcdfghjklmnpqrstvwxz':
-        return n[:-1] + 'ies'
-    else:
-        return n + 's'
-
-
-def rhyme(inp, level):
-    entries = nltk.corpus.cmudict.entries()
-    syllables = [(word, syl) for word, syl in entries if word == inp]
-    rhymes = []
-    for (word, syllable) in syllables:
-            rhymes += [word for word, pron in entries if pron[-level:] == syllable[-level:]]
-    return set(rhymes)
-
-
-def is_ryhme(word1, word2):
-    # first, we don't want to report 'glue' and 'unglue' as rhyming words
-    # those kind of rhymes are LAME
-    if word1.find(word2) == len(word1) - len(word2):
-        return False
-    if word2.find(word1) == len(word2) - len(word1):
-        return False
-
-    return word1 in rhyme(word2, 1)
-
-
-def find_rhyme(word):
-    """ Finds a word that rhyhms with the given word."""
 
 
 def get_name(word_dict):
