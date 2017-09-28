@@ -1,9 +1,26 @@
+""" Module for having fun with rhymes. """
 import nltk
 
+"""
+Resource u'corpora/cmudict' not found.  Please use the NLTK
+  Downloader to obtain the resource:  >>> nltk.download()
+  Searched in:
+    - '/home/lunatunez/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+"""
 
-def rhyme(inp, level):
+
+def rhyme(src_word, level):
+    """
+    level 0: Much stricter: 'bat' only matches {u'bat', u'batt', u'batte', u'bhatt'}
+    level 1: Seems pretty open... 'bat' matches a LOT of weird stuff
+    level 2: Seems more accurate
+    """
     entries = nltk.corpus.cmudict.entries()
-    syllables = [(word, syl) for word, syl in entries if word == inp]
+    syllables = [(word, syl) for word, syl in entries if word == src_word]
     rhymes = []
     for (word, syllable) in syllables:
             rhymes += [word for word, pron in entries if pron[-level:] == syllable[-level:]]
