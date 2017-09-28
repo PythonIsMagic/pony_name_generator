@@ -1,4 +1,5 @@
 import pytest
+import random
 import rhymes
 
 
@@ -68,3 +69,6 @@ def test_is_rhyme_glue_threw():
 
 
 # Tests for def find_rhyme(word):
+def test_find_rhyme_bat():
+    results = list(rhymes.rhyme('bat', 2))
+    assert rhymes.is_rhyme('bat', random.choice(results))
