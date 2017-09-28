@@ -7,6 +7,8 @@ import nltk
 import os
 import random
 import sys
+from plurals import exceptions
+
 DATA_DIR = 'data'
 
 categories = [
@@ -19,6 +21,7 @@ categories = [
     # ('nouns', None, 'rhyme'),
     # ('verbs', None, 'rhyme'),
 ]
+
 
 class ArgParser(argparse.ArgumentParser):
     def error(self, message):
@@ -42,6 +45,10 @@ def setup_parser():
 
 def pluralize_noun(n):
     """ Takes a noun and turns it into it's plural form """
+
+    # Check exceptions first:
+    if n in exceptions:
+        return exceptions[n]
 
     if n.endswith('us'):
         return n[:-2] + 'i'

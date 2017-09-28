@@ -10,4 +10,5 @@ exceptions = {
     'halo': 'halos',
     'tooth': 'teeth',
     'mouse': 'mice',
+    'deer': 'deer'
 }
