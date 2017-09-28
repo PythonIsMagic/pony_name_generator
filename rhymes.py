@@ -1,5 +1,7 @@
 """ Module for having fun with rhymes. """
 import nltk
+import random
+
 
 """
 Resource u'corpora/cmudict' not found.  Please use the NLTK
@@ -40,3 +42,8 @@ def is_rhyme(word1, word2):
 
 def find_rhyme(word):
     """ Finds a word that rhyhms with the given word."""
+    matches = list(rhyme(word, 2))
+    if matches:
+        return random.choice(matches)
+    else:
+        return None

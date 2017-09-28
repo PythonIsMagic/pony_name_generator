@@ -18,8 +18,8 @@ formats = [
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
     ('verbs', '3letter', None, 'nouns'),
-    # ('nouns', None, 'rhyme'),
-    # ('verbs', None, 'rhyme'),
+    ('nouns', None, 'rhyme'),
+    ('verbs', None, 'rhyme'),
 ]
 
 
@@ -44,12 +44,15 @@ def setup_parser():
 
 
 def get_name(word_dict):
-    """ Creates a random name from a dictionary. """
+    """ Creates a random name from a word dictionary. """
+
     choice = random.choice(formats)
     words = []
+
     for c in choice:
         if c:
             word = random.choice(word_dict[c])
+
             if c == 'nouns':
                 # 2 in 5 chance it's plural
                 if word not in word_dict['abstract_nouns'] and random.randint(1, 5) <= 2:
@@ -62,11 +65,18 @@ def get_name(word_dict):
                 # 1 in 10 chance it's present continuous: walking
                 # 1 in 10 chance it's past perfect tense: walked
             elif c == 'rhyme':
+                print('\t*** Rhyme!')
+                # We'll attempt to rhyme the first word
                 word = rhymes.find_rhyme(words[0])
+                if not word:
+                    word = random.choice(word_dict[choice[0]])
 
             words.append(word)
+
         else:
+            # If c is None - append a space to the name
             words.append(' ')
+
     return ''.join(words).title()
 
 
@@ -103,6 +113,7 @@ def import_words():
     word_dict['adj'] = adjs
     word_dict['verbs'] = verbs
     word_dict['3letter'] = words3letter
+    word_dict['rhyme'] = ['']
     return word_dict
 
 
