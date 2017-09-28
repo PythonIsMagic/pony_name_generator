@@ -5,12 +5,13 @@
 import argparse
 import os
 import random
-import sys
 import plurals
+import rhymes
+import sys
 
 DATA_DIR = 'data'
 
-categories = [
+formats = [
     ('nouns', None, 'nouns'),
     ('nouns', None, 'verbs'),
     ('verbs', None, 'nouns'),
@@ -30,21 +31,21 @@ class ArgParser(argparse.ArgumentParser):
 
 
 def setup_parser():
-    """ The parser should either take an integer or the -i arg.
-    """
-    parser = argparse.ArgumentParser(description="Generate some pony names!")
+    """ The parser should either take an integer or the -i arg. """
+
+    parser = argparse.ArgumentParser(description='Generate some pony names!')
 
     parser.add_argument('-n', '--number', type=int,
-                        help="The number of pony names to generate.")
+                        help='The number of pony names to generate.')
 
     parser.add_argument('-i', '--interactive', action='store_true',
-                        help="Use the name generator to interactively save or blacklist names.")
+                        help='Use the name generator to interactively save or blacklist names.')
     return parser
 
 
 def get_name(word_dict):
     """ Creates a random name from a dictionary. """
-    choice = random.choice(categories)
+    choice = random.choice(formats)
     words = []
     for c in choice:
         if c:
@@ -52,7 +53,7 @@ def get_name(word_dict):
             if c == 'nouns':
                 # 2 in 5 chance it's plural
                 if word not in word_dict['abstract_nouns'] and random.randint(1, 5) <= 2:
-                    word = pluralize_noun(word)
+                    word = plurals.pluralize_noun(word)
             elif c == 'verbs':
                 pass
                 # Example: walk
@@ -61,7 +62,7 @@ def get_name(word_dict):
                 # 1 in 10 chance it's present continuous: walking
                 # 1 in 10 chance it's past perfect tense: walked
             elif c == 'rhyme':
-                word = find_rhyme(words[0])
+                word = rhymes.find_rhyme(words[0])
 
             words.append(word)
         else:
