@@ -7,3 +7,9 @@ rarity - artistic/fastionista/clothing ----------------------------------------
 TOLL
 crunch
 
+
+possible non-plurals:
+
+applause
+
+

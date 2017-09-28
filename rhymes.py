@@ -35,7 +35,7 @@ def is_rhyme(word1, word2):
     if word2.find(word1) == len(word2) - len(word1):
         return False
 
-    return word1 in rhyme(word2, 1)
+    return word1 in rhyme(word2, 2)
 
 
 def find_rhyme(word):

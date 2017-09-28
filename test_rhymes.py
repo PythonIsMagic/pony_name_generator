@@ -1,3 +1,4 @@
+import pytest
 import rhymes
 
 
@@ -27,4 +28,43 @@ def test_rhyme_bone():
     assert 'moan' in results
 
 # Tests for def is_rhyme(word1, word2):
+
+
+def test_is_rhyme_bat_bat():
+    result = rhymes.is_rhyme('bat', 'bat')
+    assert result is False  # Can't rhyme the same word!
+
+
+def test_is_rhyme_bat_cat():
+    result = rhymes.is_rhyme('bat', 'cat')
+    assert result is True
+
+
+def test_is_rhyme_bat_bate():
+    result = rhymes.is_rhyme('bat', 'bate')
+    assert result is False
+
+
+def test_is_rhyme_glue_unglue():
+    result = rhymes.is_rhyme('glue', 'unglue')
+    assert result is False
+
+
+def test_is_rhyme_glue_flew():
+    result = rhymes.is_rhyme('glue', 'flew')
+    assert result is True
+
+
+@pytest.mark.skip()
+def test_is_rhyme_glue_flu():
+    result = rhymes.is_rhyme('glue', 'flu')
+    assert result is True
+
+
+@pytest.mark.skip()
+def test_is_rhyme_glue_threw():
+    result = rhymes.is_rhyme('glue', 'threw')
+    assert result is True
+
+
 # Tests for def find_rhyme(word):
