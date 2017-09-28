@@ -12,6 +12,11 @@ def test_pluralize_noun_sky():
     assert result == 'skies'
 
 
+def test_pluralize_noun_deer():
+    result = namegen.pluralize_noun('deer')
+    assert result == 'deer'
+
+
 # Tests for def rhyme(inp, level):
 # Tests for def is_ryhme(word1, word2):
 # Tests for def find_rhyme(word):
