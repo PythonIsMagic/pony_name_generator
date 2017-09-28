@@ -16,8 +16,8 @@ categories = [
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
     ('verbs', '3letter', None, 'nouns'),
-    ('nouns', None, 'rhyme'),
-    ('verbs', None, 'rhyme'),
+    # ('nouns', None, 'rhyme'),
+    # ('verbs', None, 'rhyme'),
 ]
 
 class ArgParser(argparse.ArgumentParser):
