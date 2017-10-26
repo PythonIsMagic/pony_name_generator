@@ -50,32 +50,30 @@ def get_name(word_dict):
     words = []
 
     for c in choice:
-        if c:
+        if c is None:
+            word = ' '
+        elif word_dict[c]:
             word = random.choice(word_dict[c])
 
             if c == 'nouns':
                 word = process_noun(word_dict, word)
             elif c == 'verbs':
                 word = process_verb(word_dict, word)
-            elif c == 'rhyme':
-                word = process_rhyme(word_dict, words[0])
+        elif c == 'rhyme':
+            word = process_rhyme(word_dict, words[0])
 
-            # Fallback is to just pick something else random...
-            if not word:
-                word = random.choice(word_dict[choice[0]])
+        # Fallback is to just pick something else random...
+        if not word:
+            word = random.choice(word_dict[choice[0]])
 
-            words.append(word)
-
-        else:
-            # If c is None - append a space to the name
-            words.append(' ')
+        words.append(word)
 
     return ''.join(words).title()
 
 
 def process_noun(word_dict, word):
     # 1 in 10 chance it's plural
-    if word not in word_dict['abstract_nouns'] and random.randint(1, 10) <= 1:
+    if word not in word_dict['nouns_abstract'] and random.randint(1, 10) <= 1:
         return plurals.pluralize_noun(word)
     else:
         return word
@@ -104,7 +102,6 @@ def scan_files(prefix):
 
     words = []
     for f in files:
-        # print('Scanning {}'.format(f))
         with open(f, 'r') as wf:
             for w in wf.readlines():
                 if w:
@@ -117,20 +114,15 @@ def import_words():
     """ Collects all the words from the data files.
         Creates a dictionary of nouns, verbs, and adjectives.
     """
-    nouns = scan_files('nouns')
-    abstract_nouns = scan_files('nouns_abstract')
-    adjs = scan_files('adj')
-    verbs = scan_files('verb')
-    words3letter = scan_files('3letter')
-
-    word_dict = {}
-    word_dict['abstract_nouns'] = abstract_nouns
-    word_dict['nouns'] = nouns
-    word_dict['adj'] = adjs
-    word_dict['verbs'] = verbs
-    word_dict['3letter'] = words3letter
-    word_dict['rhyme'] = ['']
-    return word_dict
+    categories = (
+        '3letter',
+        'adj',
+        'nouns',
+        'nouns_abstract',
+        'verbs',
+        'rhyme'
+    )
+    return {c: scan_files(c) for c in categories}
 
 
 def main():
