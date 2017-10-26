@@ -1,50 +1,15 @@
 http://www.manythings.org/vocabulary/lists/l/			# This one has lots of stuff!
 
 
-Are you looking for wordlist containing proper nouns like person names, organization names etc ? In that case I suggest to look at Ontology sources like 
-1) FreeBase(http://www.freebase.com/)
-2) Yago(http://www.mpi-inf.mpg.de/yago-naga/yago/)
-
-3)DBpedia(http://wiki.dbpedia.org/Datasets#h18-8)
-
-gazetteer list which are used for named entity recognition
-(http://en.wikipedia.org/wiki/Named-entity_recognition). 
-
-GATE ANNIE(http://gate.ac.uk/ie/annie.html) is NER tool which uses gazetteer list and grammar rules for named entity recognition.
-
-
-http://en.wikipedia.org/wiki/Category:Lists
-
-CMU's NELL project has collected a huge list of proper nouns from the web and categorized them by type. 
-You can browse online at: http://rtw.ml.cmu.edu/rtw/kbbrowser/
-download the data at: http://rtw.ml.cmu.edu/rtw/resources
-
-
-
-
-In case if you are not able to find any ready-made list, a good idea would be to sift through large number of Wikipedia articles and run them through an NLP tool (such as Python’s NLTK) that provides words tagging capability (google nltk POS tagger).
-
-Using POS tagger capabilities, you can get as many nouns as you want by sifting through sentences of large number of wikipedia articles. Examples of using python NLTK POS tagger to extract nouns are straightforward and readily available.
-
-
-
-
-
-
 https://www.englishclub.com/vocabulary/regular-verbs-list.htm
 http://speakspeak.com/resources/vocabulary-general-english/english-irregular-verbs
 http://www.myenglishteacher.net/irregular_verbs.html
-http://www.englishleap.com/grammar/list-of-regular-verbs
-
-
-http://www.enchantedlearning.com/wordlist/adjectives.shtml
-http://www.talkenglish.com/vocabulary/top-500-adjectives.aspx
-http://adjectivesstarting.com/
-http://grammar.yourdictionary.com/parts-of-speech/adjectives/list-of-adjective-words.html
 
 
 
-
-
-
-
+examples:
+	Rainbow dash (sports, military, loyalty)
+	fluttershy: nature/water/earth/sky/space
+	fluttershy_ pets/generosity/tea parties/singing
+	applejack: food related/apples/kitchen equipment/cooking techniques
+	rarity - artistic/fastionista/clothing
