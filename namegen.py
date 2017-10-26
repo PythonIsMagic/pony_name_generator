@@ -54,22 +54,15 @@ def get_name(word_dict):
             word = random.choice(word_dict[c])
 
             if c == 'nouns':
-                # 2 in 5 chance it's plural
-                if word not in word_dict['abstract_nouns'] and random.randint(1, 5) <= 2:
-                    word = plurals.pluralize_noun(word)
+                word = process_noun(word_dict, word)
             elif c == 'verbs':
-                pass
-                # Example: walk
-                # 1 in 10 chance it's simple present tense: walk
-                # 1 in 10 chance it's present tense: walks
-                # 1 in 10 chance it's present continuous: walking
-                # 1 in 10 chance it's past perfect tense: walked
+                word = process_verb(word_dict, word)
             elif c == 'rhyme':
-                print('\t*** Rhyme!')
-                # We'll attempt to rhyme the first word
-                word = rhymes.find_rhyme(words[0])
-                if not word:
-                    word = random.choice(word_dict[choice[0]])
+                word = process_rhyme(word_dict, words[0])
+
+            # Fallback is to just pick something else random...
+            if not word:
+                word = random.choice(word_dict[choice[0]])
 
             words.append(word)
 
@@ -78,6 +71,29 @@ def get_name(word_dict):
             words.append(' ')
 
     return ''.join(words).title()
+
+
+def process_noun(word_dict, word):
+    # 1 in 10 chance it's plural
+    if word not in word_dict['abstract_nouns'] and random.randint(1, 10) <= 1:
+        return plurals.pluralize_noun(word)
+    else:
+        return word
+
+
+def process_verb(word_dict, word):
+    pass
+    # Example: walk
+    # 1 in 10 chance it's simple present tense: walk
+    # 1 in 10 chance it's present tense: walks
+    # 1 in 10 chance it's present continuous: walking
+    # 1 in 10 chance it's past perfect tense: walked
+
+
+def process_rhyme(word_dict, word):
+    print('\t*** Rhyming!')
+    # We'll attempt to rhyme the first word
+    return rhymes.find_rhyme(word)
 
 
 def scan_files(prefix):
