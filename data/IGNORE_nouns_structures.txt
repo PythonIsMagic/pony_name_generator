@@ -2,7 +2,6 @@
 abbey
 academy
 acropolis
-chamber
 aisle
 altar
 apothecary
@@ -19,6 +18,7 @@ canopy
 cantilever
 castle
 cathedral
+chamber
 chancel
 chapel
 circus

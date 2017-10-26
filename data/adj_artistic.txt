@@ -1,3 +1,4 @@
+
 accelerando
 acoustic
 agitato
@@ -34,12 +35,12 @@ grave
 grazioso
 gusto
 improvvisando
-intermezzo
-intimo
-irato
 improvvisato
 incalzando
 insistendo
+intermezzo
+intimo
+irato
 lacrimoso
 lagrimoso
 lament
@@ -53,7 +54,6 @@ largo
 legato
 lento
 luninoso
-
 maestro
 magico
 magnifico
