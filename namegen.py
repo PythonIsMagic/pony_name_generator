@@ -67,7 +67,7 @@ def get_name(word_dict):
     """ Creates a random name from a word dictionary. """
 
     choice = random.choice(formats)
-    print(choice)
+    print('Categories: {}'.format(choice))
     words = []
 
     for c in choice:
@@ -91,6 +91,10 @@ def get_name(word_dict):
             word = '#{}#'.format(c)
 
         words.append(word)
+
+    # 1 in 5 chance we do honorific!
+    if random.randint(1, 5) == 1:
+        words.insert(0, random.choice(word_dict['honorifics']) + ' ')
 
     return ''.join(words).title()
 
