@@ -7,7 +7,7 @@ def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
     if verb.endswith('e'):
         return verb[:-1] + 'ing'
-    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't')):
+    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')):
         return verb[:-1] + verb[-1] * 2 + 'ing'
     else:
         return verb + 'ing'
@@ -19,7 +19,7 @@ def verb_to_noun(verb):
         return er_exceptions[verb]
     elif verb.endswith('e'):
         return verb + 'r'
-    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't')):
+    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')):
         return verb[:-1] + verb[-1] * 2 + 'er'
     else:
         return verb + 'er'

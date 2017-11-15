@@ -37,6 +37,10 @@ def test_to_ing_tense_fly():
     assert tenses.to_ing_tense('fly') == 'flying'
 
 
+def test_to_ing_tense_whiz():
+    assert tenses.to_ing_tense('whiz') == 'whizzing'
+
+
 def test_verb_to_noun_rip():
     assert tenses.verb_to_noun('rip') == 'ripper'
 
@@ -71,6 +75,10 @@ def test_verb_to_noun_hop():
 
 def test_verb_to_noun_fly():
     assert tenses.verb_to_noun('fly') == 'flyer'
+
+
+def test_verb_to_noun_whiz():
+    assert tenses.verb_to_noun('whiz') == 'whizzer'
 
 
 def test_to_past_tense():

@@ -13,16 +13,30 @@ import tenses
 DATA_DIR = 'data'
 
 formats = [
+    ('compound_names',),
     ('nouns', None, 'nouns'),
     ('nouns', None, 'verbs'),
     ('verbs', None, 'nouns'),
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
-    ('verbs', '3letter', None, 'nouns'),
+
+    # ('verbs', '3letter', None, 'nouns'),
+
+    # ('suffix_noun', 'nouns', None, 'nouns'),
+    # ('nouns', None, 'suffix_noun', 'nouns'),
+    # ('suffix_noun', 'nouns', None, 'verbs'),
+    # ('nouns', None, 'suffix_verb', 'verbs'),
+    # ('suffix_verb', 'verbs', None, 'nouns'),
+    # ('adj', None, 'suffix_noun', 'nouns'),
+    # ('adj', None, 'suffix_verb', 'verbs'),
+
     # ('nouns', None, 'rhyme'),
     # ('verbs', None, 'rhyme'),
-    ('honorifics', None, 'nouns'),
-    ('honorifics', None, 'verbs'),
+    # ('honorifics', None, 'nouns', None, 'nouns'),
+    # ('honorifics', None, 'nouns', None, 'verbs'),
+    # ('honorifics', None, 'verbs', None, 'nouns'),
+    # ('honorifics', None, 'adj', None, 'nouns'),
+    # ('honorifics', None, 'adj', None, 'verbs'),
 ]
 
 
@@ -139,6 +153,9 @@ def import_words():
         # 'rhyme',
         'honorifics',
         'suffix',
+        'compound_names',
+        'suffix_noun',
+        'suffix_verb',
     )
     return {c: scan_files(c) for c in categories}
 
