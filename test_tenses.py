@@ -9,6 +9,14 @@ def test_to_ing_tense_walk():
     assert tenses.to_ing_tense('walk') == 'walking'
 
 
+def test_to_ing_tense_run():
+    assert tenses.to_ing_tense('run') == 'running'
+
+
+def test_to_ing_tense_hum():
+    assert tenses.to_ing_tense('hum') == 'humming'
+
+
 def test_to_ing_tense_breathe():
     assert tenses.to_ing_tense('breathe') == 'breathing'
 
@@ -35,6 +43,14 @@ def test_verb_to_noun_rip():
 
 def test_verb_to_noun_walk():
     assert tenses.verb_to_noun('walk') == 'walker'
+
+
+def test_verb_to_noun_run():
+    assert tenses.verb_to_noun('run') == 'runner'
+
+
+def test_verb_to_noun_hum():
+    assert tenses.verb_to_noun('hum') == 'hummer'
 
 
 def test_verb_to_noun_breathe():
