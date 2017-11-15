@@ -18,8 +18,10 @@ formats = [
     ('adj', None, 'nouns'),
     ('adj', None, 'verbs'),
     ('verbs', '3letter', None, 'nouns'),
-    ('nouns', None, 'rhyme'),
-    ('verbs', None, 'rhyme'),
+    # ('nouns', None, 'rhyme'),
+    # ('verbs', None, 'rhyme'),
+    ('honorifics', None, 'nouns'),
+    ('honorifics', None, 'verbs'),
 ]
 
 
@@ -47,12 +49,15 @@ def get_name(word_dict):
     """ Creates a random name from a word dictionary. """
 
     choice = random.choice(formats)
+    print(choice)
     words = []
 
     for c in choice:
+        word = None
+
         if c is None:
             word = ' '
-        elif word_dict[c]:
+        elif word_dict.get(c, None):
             word = random.choice(word_dict[c])
 
             if c == 'nouns':
@@ -64,7 +69,8 @@ def get_name(word_dict):
 
         # Fallback is to just pick something else random...
         if not word:
-            word = random.choice(word_dict[choice[0]])
+            # word = random.choice(word_dict[choice[0]])
+            word = '#{}#'.format(c)
 
         words.append(word)
 
@@ -121,6 +127,8 @@ def import_words():
         'nouns_abstract',
         'verbs',
         'rhyme'
+        'honorifics',
+        'suffix'
     )
     return {c: scan_files(c) for c in categories}
 
