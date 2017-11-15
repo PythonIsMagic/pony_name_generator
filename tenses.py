@@ -5,6 +5,12 @@ def to_past_tense(verb):
 
 def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
+    if verb.endswith('e'):
+        return verb[:-1] + 'ing'
+    elif verb.endswith(('b', 'd', 'g', 'p', 't')):
+        return verb[:-1] + verb[-1] * 2 + 'ing'
+    else:
+        return verb + 'ing'
 
 
 def verb_to_noun(verb):
