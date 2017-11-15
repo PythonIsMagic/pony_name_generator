@@ -43,6 +43,9 @@ def setup_parser():
 
     parser.add_argument('-i', '--interactive', action='store_true',
                         help='Use the name generator to interactively save or blacklist names.')
+
+    parser.add_argument('-r', '--review', action='store_true',
+                        help='Check all the word entries that are being used.')
     return parser
 
 
@@ -57,7 +60,7 @@ def get_name(word_dict):
         word = None
 
         if c is None:
-            word = ' '
+            word = ' '  # Just adding a space
         elif word_dict.get(c, None):
             word = random.choice(word_dict[c])
 
@@ -133,11 +136,17 @@ def import_words():
         'nouns',
         'nouns_abstract',
         'verbs',
-        'rhyme'
+        # 'rhyme',
         'honorifics',
-        'suffix'
+        'suffix',
     )
     return {c: scan_files(c) for c in categories}
+
+
+def review_word_dict(word_dict):
+    print('Reviewing word_dict')
+    for k, v in word_dict.items():
+        print('Category: {} has {} entries.'.format(k, len(v)))
 
 
 def main():
@@ -148,13 +157,12 @@ def main():
 
     if len(sys.argv) == 1:
         parser.print_help()
-        sys.exit(1)
+    elif args.review:
+        review_word_dict(word_dict)
     elif args.number:
         for i in range(args.number):
             name = get_name(word_dict)
             print(name)
-
-        exit()
 
     elif args.interactive:
         while True:
@@ -162,6 +170,7 @@ def main():
             print(name)
             raw_input()
 
+    sys.exit(1)
 
 if __name__ == "__main__":
     main()
