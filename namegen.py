@@ -8,6 +8,7 @@ import random
 import plurals
 import rhymes
 import sys
+import tenses
 
 DATA_DIR = 'data'
 
@@ -78,20 +79,26 @@ def get_name(word_dict):
 
 
 def process_noun(word_dict, word):
-    # 1 in 10 chance it's plural
-    if word not in word_dict['nouns_abstract'] and random.randint(1, 10) <= 1:
+    if word in word_dict['nouns_abstract']:
+        return word  # It's already plural...
+    elif random.randint(1, 10) <= 1:
+        # 1 in 10 chance it's plural
         return plurals.pluralize_noun(word)
     else:
         return word
 
 
 def process_verb(word_dict, word):
-    pass
-    # Example: walk
-    # 1 in 10 chance it's simple present tense: walk
-    # 1 in 10 chance it's present tense: walks
-    # 1 in 10 chance it's present continuous: walking
-    # 1 in 10 chance it's past perfect tense: walked
+    n = random.randint(1, 10)
+    if n == 1:
+        # 1 in 10 chance it's present continuous: walking
+        return tenses.to_ing_tense(word)
+    elif n == 2:
+        # 1 in 10 chance it's a verb transformed into a noun
+        return tenses.verb_to_noun(word)
+    else:
+        # Otherwise just a normal verb
+        return word
 
 
 def process_rhyme(word_dict, word):
