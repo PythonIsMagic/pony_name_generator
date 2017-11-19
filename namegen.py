@@ -13,7 +13,7 @@ import tenses
 DATA_DIR = 'data'
 
 formats = [
-    ('compound_names',),
+    # ('compound_names',),
     ('nouns', None, 'nouns'),
     ('nouns', None, 'verbs'),
     ('verbs', None, 'nouns'),
@@ -32,6 +32,8 @@ formats = [
 
     # ('nouns', None, 'rhyme'),
     # ('verbs', None, 'rhyme'),
+
+    # ('honorifics', None, 'compound_names',),
     # ('honorifics', None, 'nouns', None, 'nouns'),
     # ('honorifics', None, 'nouns', None, 'verbs'),
     # ('honorifics', None, 'verbs', None, 'nouns'),
@@ -67,7 +69,6 @@ def get_name(word_dict):
     """ Creates a random name from a word dictionary. """
 
     choice = random.choice(formats)
-    print('Categories: {}'.format(choice))
     words = []
 
     for c in choice:
@@ -93,10 +94,11 @@ def get_name(word_dict):
         words.append(word)
 
     # 1 in 5 chance we do honorific!
-    if random.randint(1, 5) == 1:
-        words.insert(0, random.choice(word_dict['honorifics']) + ' ')
+    # if random.randint(1, 5) == 1:
+        # words.insert(0, random.choice(word_dict['honorifics']) + ' ')
 
-    return ''.join(words).title()
+    name = ''.join(words).title()
+    return '{:35} {}'.format(name, choice)
 
 
 def process_noun(word_dict, word):
