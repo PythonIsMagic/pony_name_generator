@@ -56,6 +56,13 @@ dart
 dash
 defend
 dissect
+bark
+itemize
+paint
+rehash
+snooze
+snort
+spoil
 dive
 dodge
 down
