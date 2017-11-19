@@ -5,10 +5,9 @@
 import argparse
 import os
 import random
-import plurals
 import rhymes
 import sys
-import tenses
+import transformations as tr
 
 DATA_DIR = 'data'
 
@@ -106,7 +105,7 @@ def process_noun(word_dict, word):
         return word  # It's already plural...
     elif random.randint(1, 10) <= 1:
         # 1 in 10 chance it's plural
-        return plurals.pluralize_noun(word)
+        return tr.pluralize_noun(word)
     else:
         return word
 
@@ -115,10 +114,10 @@ def process_verb(word_dict, word):
     n = random.randint(1, 10)
     if n == 1:
         # 1 in 10 chance it's present continuous: walking
-        return tenses.to_ing_tense(word)
+        return tr.to_ing_tense(word)
     elif n == 2:
         # 1 in 10 chance it's a verb transformed into a noun
-        return tenses.verb_to_noun(word)
+        return tr.verb_to_noun(word)
     else:
         # Otherwise just a normal verb
         return word
@@ -168,8 +167,18 @@ def import_words():
 
 def review_word_dict(word_dict):
     print('Reviewing word_dict')
+    allwords = [w for c in word_dict.values() for w in c]
+    print('{} total words used'.format(len(allwords)))
+    print('{} unique words used'.format(len(set(allwords))))
+
     for k, v in word_dict.items():
         print('Category: {} has {} entries.'.format(k, len(v)))
+
+    dupes = sorted(list(set([w for w in allwords if allwords.count(w) > 1])))
+    print('These words occur in more than one list')
+
+    for d in dupes:
+        print(d)
 
 
 def main():
