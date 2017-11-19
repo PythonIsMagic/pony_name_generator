@@ -11,16 +11,41 @@ import transformations as tr
 
 DATA_DIR = 'data'
 
+categories = (
+    '3letter',
+    'adj',
+    'noun',
+    'noun_abstract',
+    'verb',
+    # 'rhyme',
+    'honorific',
+    'suffix',
+    'compound',
+    'suffix_noun',
+    'suffix_verb',
+)
+
 formats = [
     # ('compound',),
-    ['noun', None, 'noun'],
-    ['noun', None, 'verb'],
-    ['verb', None, 'noun'],
-    ['adj', None, 'noun'],
-    ['adj', None, 'verb'],
+    # ['noun', None, 'noun'],
+    ['noun', None, 'noun_plural'],
 
-    ['verb', '3letter', None, 'noun'],
+    # ['noun', None, 'verb'],
+    ['noun', None, 'verb_er'],
+    # ['verb', None, 'noun'],
+    ['verb_ing', None, 'noun'],
 
+    # ['adj', None, 'noun'],
+    ['adj', None, 'noun_plural'],
+    # ['adj', None, 'verb'],
+    ['adj', None, 'verb_ing'],
+    ['adj', None, 'verb_er'],
+
+    # Adding random 3-letter-partials
+    # ['verb', '3letter', None, 'noun'],
+    # ['3letter', 'verb', None, 'noun'],
+
+    # Suffix/prefix
     # ('suffix_noun', 'noun', None, 'noun'),
     # ('noun', None, 'suffix_noun', 'noun'),
     # ('suffix_noun', 'noun', None, 'verb'),
@@ -29,15 +54,11 @@ formats = [
     # ('adj', None, 'suffix_noun', 'noun'),
     # ('adj', None, 'suffix_verb', 'verb'),
 
-    # ('nouns', None, 'rhyme'),
-    # ('verbs', None, 'rhyme'),
+    # Rhymes
+    # ('noun', None, 'rhyme'),
+    # ('verb', None, 'rhyme'),
 
-    # ('honorific', None, 'compound',),
-    # ('honorific', None, 'noun', None, 'noun'),
-    # ('honorific', None, 'noun', None, 'verb'),
-    # ('honorific', None, 'verb', None, 'noun'),
-    # ('honorific', None, 'adj', None, 'noun'),
-    # ('honorific', None, 'adj', None, 'verb'),
+    # Alliterations
 ]
 
 
@@ -57,7 +78,7 @@ def setup_parser():
                         help='The number of pony names to generate.')
 
     parser.add_argument('-i', '--interactive', action='store_true',
-                        help='Use the name generator to interactively save or blacklist names.')
+                        help='Generate names one by one - interactively blacklist or like.')
 
     parser.add_argument('-r', '--review', action='store_true',
                         help='Check all the word entries that are being used.')
@@ -88,45 +109,17 @@ def get_name(word_dict, args):
         elif word_dict.get(c, None):
             word = random.choice(word_dict[c])
 
-            if c == 'nouns':
-                word = process_noun(word_dict, word)
-            elif c == 'verbs':
-                word = process_verb(word_dict, word)
         elif c == 'rhyme':
             word = process_rhyme(word_dict, words[0])
 
-        # Fallback is to just pick something else random...
+        # Fallback is to show what category it is
         if not word:
-            # word = random.choice(word_dict[choice[0]])
             word = '#{}#'.format(c)
 
         words.append(word)
 
     name = ''.join(words).title()
     return '{:40} {}'.format(name, choice)
-
-
-def process_noun(word_dict, word):
-    if word in word_dict['nouns_abstract']:
-        return word  # It's already plural...
-    elif random.randint(1, 10) <= 1:
-        # 1 in 10 chance it's plural
-        return tr.pluralize_noun(word)
-    else:
-        return word
-
-
-def process_verb(word_dict, word):
-    n = random.randint(1, 10)
-    if n == 1:
-        # 1 in 10 chance it's present continuous: walking
-        return tr.to_ing_tense(word)
-    elif n == 2:
-        # 1 in 10 chance it's a verb transformed into a noun
-        return tr.verb_to_noun(word)
-    else:
-        # Otherwise just a normal verb
-        return word
 
 
 def process_rhyme(word_dict, word):
@@ -156,20 +149,18 @@ def import_words():
     """ Collects all the words from the data files.
         Creates a dictionary of nouns, verbs, and adjectives.
     """
-    categories = (
-        '3letter',
-        'adj',
-        'noun',
-        'noun_abstract',
-        'verb',
-        # 'rhyme',
-        'honorific',
-        'suffix',
-        'compound',
-        'suffix_noun',
-        'suffix_verb',
-    )
-    return {c: scan_files(c) for c in categories}
+
+    print('Importing database')
+    word_dict = {c: scan_files(c) for c in categories}
+
+    # Transformations
+    print('Processing transformations!')
+    word_dict['verb_ing'] = [tr.to_ing_tense(v) for v in word_dict['verb']]
+    word_dict['verb_er'] = [tr.verb_to_noun(v) for v in word_dict['verb']]
+    word_dict['noun_plural'] = [tr.pluralize_noun(n) for n in word_dict['noun'] if n not in word_dict['noun_abstract']]
+
+    print('Import and transformations complete!')
+    return word_dict
 
 
 def review_word_dict(word_dict):
