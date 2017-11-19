@@ -18,6 +18,8 @@ def to_ing_tense(verb):
         return verb[:-1] + 'ing'
     elif verb.endswith(('mb', 'ng')):
         return verb + 'ing'
+    elif verb[-3] in VOWELS and verb[-2] in VOWELS:
+        return verb + 'ing'
     elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
         return double_up_con(verb, 'ing')
     else:
@@ -32,6 +34,8 @@ def verb_to_noun(verb):
         return verb + 'r'
     elif verb.endswith(('mb', 'ng')):
         return verb + 'ing'
+    elif verb[-2] in VOWELS and verb[-1] in VOWELS:
+        return verb + 'er'
     elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
         return double_up_con(verb, 'er')
     else:
