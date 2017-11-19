@@ -1,5 +1,9 @@
-abused
+abandoned
+abnormal
 adverse
+abysmal
+abrupt
+absentminded
 afraid
 aggressive
 angry
@@ -7,6 +11,12 @@ anguish
 annoying
 anxious
 appalling
+abhorrent
+abominable
+abrasive
+absent
+absurd
+
 atrocious
 auspicious
 avengeful

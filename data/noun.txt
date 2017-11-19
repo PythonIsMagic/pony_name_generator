@@ -1159,7 +1159,10 @@ style
 subject
 sublime
 suburb
-Suite
+suite
+reverie
+revery
+activist
 sunbeam
 sundown
 sunrise

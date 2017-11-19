@@ -240,6 +240,7 @@ sweep
 swell
 swim
 swing
+revere
 swoop
 tail
 teach

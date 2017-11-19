@@ -60,20 +60,20 @@ $ python namegen.py -h -n 10
 - [ ] Add a screenshot to the README
 - [ ] Configure konch to be really sexy with iPython
 - [ ] Generate requirements.txt with $ pip freeze --local > requirements.txt
-- [ ] Thin out the music terminology a bit
+- [X] Thin out the music terminology a bit
 - [ ] Make sure all official pony names are capable of being generated
 - [ ] Blacklist all official pony names - we want originals!
-- [ ] Don't repeat similar words in a single name ('Walking Walker')
+- [X] Don't repeat similar words in a single name ('Walking Walker')
 - [ ] Fix: Some nouns are getting cut off "Ica" "Moa"
 - [ ] Single word names - Maybe limit to over 2 syllables
 - [ ] Count syllables in a word (NLTK?)
-- [ ] Add alliteration
-- [ ] When creating the database, add all variations from the start
+- [X] Add alliteration
+- [X] When creating the database, add all variations from the start
 - [ ] Add support for a persistant shelve database, updating, etc.
-- [ ] Make the combos better
+- [X] Make the combos better
 - [X] Make honorifics optional from command line
 - [ ] noun transformations
-- [ ] Add verb past tense transformations
+- [X] Add verb past tense transformations
 - [ ] Create a Django site - one page, to handle generating names
 - [ ] Create an IOS app
 - [ ] Port to Android
