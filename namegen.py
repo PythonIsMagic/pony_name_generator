@@ -26,20 +26,22 @@ categories = (
 )
 
 formats = [
-    # ('compound',),
-    # ['noun', 'noun'],
-    # ['noun', 'noun_plural'],
+    ['compound'],
+    ['noun'],
+    ['noun', 'noun'],
+    ['noun', 'noun_plural'],
+    ['noun', 'verb'],
+    ['noun', 'verb_er'],
 
-    # ['noun', 'verb'],
-    # ['noun', 'verb_er'],
-    # ['verb', 'noun'],
-    # ['verb_ing', 'noun'],
+    ['verb_ing', 'noun'],
+    ['verb_ing', 'noun_plural'],
 
-    # ['adj', 'noun'],
-    # ['adj', 'noun_plural'],
-    # ['adj', 'verb'],
-    # ['adj', 'verb_ing'],
-    # ['adj', 'verb_er'],
+    ['adj'],
+    ['adj', 'noun'],
+    ['adj', 'noun_plural'],
+    ['adj', 'verb'],
+    ['adj', 'verb_ing'],
+    ['adj', 'verb_er'],
 
     # Adding random 3-letter-partials
     # ['verb', '3letter', 'noun'],
@@ -60,8 +62,18 @@ formats = [
 
     # Alliterations
     ['noun', 'alliterate noun'],
+    ['noun', 'alliterate noun_plural'],
     ['noun', 'alliterate verb'],
-    ['noun', 'alliterate adj'],
+    ['noun', 'alliterate verb_er'],
+
+    ['verb_ing', 'alliterate noun'],
+    ['verb_ing', 'alliterate noun_plural'],
+
+    ['adj', 'alliterate noun'],
+    ['adj', 'alliterate noun_plural'],
+    ['adj', 'alliterate verb'],
+    ['adj', 'alliterate verb_ing'],
+    ['adj', 'alliterate verb_er'],
 ]
 
 
