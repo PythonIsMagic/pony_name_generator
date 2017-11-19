@@ -89,7 +89,7 @@ flicker
 fury
 gunshot
 heat
-lazer
+laser
 napalm
 nitroglycerine
 nitro

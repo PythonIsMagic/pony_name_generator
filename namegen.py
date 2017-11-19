@@ -13,13 +13,13 @@ DATA_DIR = 'data'
 
 formats = [
     # ('compound',),
-    ('noun', None, 'noun'),
-    ('noun', None, 'verb'),
-    ('verb', None, 'noun'),
-    ('adj', None, 'noun'),
-    ('adj', None, 'verb'),
+    ['noun', None, 'noun'],
+    ['noun', None, 'verb'],
+    ['verb', None, 'noun'],
+    ['adj', None, 'noun'],
+    ['adj', None, 'verb'],
 
-    ('verb', '3letter', None, 'noun'),
+    ['verb', '3letter', None, 'noun'],
 
     # ('suffix_noun', 'noun', None, 'noun'),
     # ('noun', None, 'suffix_noun', 'noun'),
@@ -32,12 +32,12 @@ formats = [
     # ('nouns', None, 'rhyme'),
     # ('verbs', None, 'rhyme'),
 
-    ('honorific', None, 'compound',),
-    ('honorific', None, 'noun', None, 'noun'),
-    ('honorific', None, 'noun', None, 'verb'),
-    ('honorific', None, 'verb', None, 'noun'),
-    ('honorific', None, 'adj', None, 'noun'),
-    ('honorific', None, 'adj', None, 'verb'),
+    # ('honorific', None, 'compound',),
+    # ('honorific', None, 'noun', None, 'noun'),
+    # ('honorific', None, 'noun', None, 'verb'),
+    # ('honorific', None, 'verb', None, 'noun'),
+    # ('honorific', None, 'adj', None, 'noun'),
+    # ('honorific', None, 'adj', None, 'verb'),
 ]
 
 
@@ -61,13 +61,23 @@ def setup_parser():
 
     parser.add_argument('-r', '--review', action='store_true',
                         help='Check all the word entries that are being used.')
+
+    parser.add_argument('-H', '--honorifics', action='store_true',
+                        help='Adds an honorific prefix to each name.')
+
     return parser
 
 
-def get_name(word_dict):
+def get_name(word_dict, args):
     """ Creates a random name from a word dictionary. """
 
-    choice = random.choice(formats)
+    choice = random.choice(formats)[:]
+
+    if args.honorifics:
+        choice.insert(0, 'honorific')
+        choice.insert(1, None)
+        # words.insert(0, random.choice(word_dict.get('honorific', [])) + ' ')
+
     words = []
 
     for c in choice:
@@ -92,12 +102,8 @@ def get_name(word_dict):
 
         words.append(word)
 
-    # 1 in 5 chance we do honorific!
-    # if random.randint(1, 5) == 1:
-        # words.insert(0, random.choice(word_dict['honorifics']) + ' ')
-
     name = ''.join(words).title()
-    return '{:35} {}'.format(name, choice)
+    return '{:40} {}'.format(name, choice)
 
 
 def process_noun(word_dict, word):
@@ -139,8 +145,9 @@ def scan_files(prefix):
     for f in files:
         with open(f, 'r') as wf:
             for w in wf.readlines():
+                w = w.strip()
                 if w:
-                    words.append(w.strip())
+                    words.append(w)
 
     return list(set(words))
 
@@ -193,12 +200,12 @@ def main():
         review_word_dict(word_dict)
     elif args.number:
         for i in range(args.number):
-            name = get_name(word_dict)
+            name = get_name(word_dict, args)
             print(name)
 
     elif args.interactive:
         while True:
-            name = get_name(word_dict)
+            name = get_name(word_dict, args)
             print(name)
             raw_input()
 

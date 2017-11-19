@@ -71,7 +71,7 @@ $ python namegen.py -h -n 10
 - [ ] When creating the database, add all variations from the start
 - [ ] Add support for a persistant shelve database, updating, etc.
 - [ ] Make the combos better
-- [ ] Make honorifics optional from command line
+- [X] Make honorifics optional from command line
 - [ ] noun transformations
 - [ ] Add verb past tense transformations
 - [ ] Create a Django site - one page, to handle generating names
