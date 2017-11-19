@@ -18,7 +18,6 @@ battery
 beaker
 bible
 bill
-binoculars
 bond
 book
 booklet

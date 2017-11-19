@@ -1,4 +1,6 @@
 afterlight
+injury
+demo
 barrel
 antic
 arena

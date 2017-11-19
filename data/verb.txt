@@ -55,7 +55,6 @@ dance
 dart
 dash
 defend
-demo
 dissect
 dive
 dodge
@@ -108,7 +107,6 @@ huff
 hunt
 hurry
 infer
-injure
 jump
 juxtapose
 kick

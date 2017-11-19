@@ -91,7 +91,6 @@ gunshot
 heat
 laser
 napalm
-nitroglycerine
 nitro
 peacemaker
 pyre
