@@ -27,41 +27,41 @@ categories = (
 
 formats = [
     # ('compound',),
-    # ['noun', None, 'noun'],
-    ['noun', None, 'alliterate noun'],
-    ['noun', None, 'alliterate verb'],
-    ['noun', None, 'alliterate adj'],
-    # ['noun', None, 'noun_plural'],
+    # ['noun', 'noun'],
+    # ['noun', 'noun_plural'],
 
-    # ['noun', None, 'verb'],
-    # ['noun', None, 'verb_er'],
-    # ['verb', None, 'noun'],
-    # ['verb_ing', None, 'noun'],
+    # ['noun', 'verb'],
+    # ['noun', 'verb_er'],
+    # ['verb', 'noun'],
+    # ['verb_ing', 'noun'],
 
-    # ['adj', None, 'noun'],
-    # ['adj', None, 'noun_plural'],
-    # ['adj', None, 'verb'],
-    # ['adj', None, 'verb_ing'],
-    # ['adj', None, 'verb_er'],
+    # ['adj', 'noun'],
+    # ['adj', 'noun_plural'],
+    # ['adj', 'verb'],
+    # ['adj', 'verb_ing'],
+    # ['adj', 'verb_er'],
 
     # Adding random 3-letter-partials
-    # ['verb', '3letter', None, 'noun'],
-    # ['3letter', 'verb', None, 'noun'],
+    # ['verb', '3letter', 'noun'],
+    # ['3letter', 'verb', 'noun'],
 
     # Suffix/prefix
-    # ('suffix_noun', 'noun', None, 'noun'),
-    # ('noun', None, 'suffix_noun', 'noun'),
-    # ('suffix_noun', 'noun', None, 'verb'),
-    # ('noun', None, 'suffix_verb', 'verb'),
-    # ('suffix_verb', 'verb', None, 'noun'),
-    # ('adj', None, 'suffix_noun', 'noun'),
-    # ('adj', None, 'suffix_verb', 'verb'),
+    # ('suffix_noun', 'noun', 'noun'),
+    # ('noun', 'suffix_noun', 'noun'),
+    # ('suffix_noun', 'noun', 'verb'),
+    # ('noun', 'suffix_verb', 'verb'),
+    # ('suffix_verb', 'verb', 'noun'),
+    # ('adj', 'suffix_noun', 'noun'),
+    # ('adj', 'suffix_verb', 'verb'),
 
     # Rhymes
-    # ('noun', None, 'rhyme'),
-    # ('verb', None, 'rhyme'),
+    # ('noun', 'rhyme'),
+    # ('verb', 'rhyme'),
 
     # Alliterations
+    ['noun', 'alliterate noun'],
+    ['noun', 'alliterate verb'],
+    ['noun', 'alliterate adj'],
 ]
 
 
@@ -92,6 +92,14 @@ def setup_parser():
     return parser
 
 
+def finish_name(parts):
+    # bug - a single quote resets the length of the name, and capitalizes the
+    # letter after the '
+    # ie: bird's -> Bird'S
+
+    return ' '.join(parts).title()
+
+
 def get_name(word_dict, args):
     """ Creates a random name from a word dictionary. """
 
@@ -99,31 +107,30 @@ def get_name(word_dict, args):
 
     if args.honorifics:
         choice.insert(0, 'honorific')
-        choice.insert(1, None)
 
-    words = []
+    parts = []
 
     for c in choice:
         word = None
 
         if c is None:
-            word = ' '  # Just adding a space
+            word = '???'
         elif word_dict.get(c, None):
             word = random.choice(word_dict[c])
 
         elif c == 'rhyme':
-            word = rhyme(words[-2])  # Rhyme the last word
+            word = rhyme(parts[-1])  # Rhyme the last word
         elif c.startswith('alliterate'):
             part = c.split()[-1]
-            word = alliteration(word_dict[part], words[-2])  # Alliterate the last word)
+            word = alliteration(word_dict[part], parts[-1])  # Alliterate the last word)
+
         # Fallback is to show what category it is
         if not word:
             word = '#{}#'.format(c)
 
-        words.append(word)
+        parts.append(word)
 
-    name = ''.join(words).title()
-    return '{:40} {}'.format(name, choice)
+    return finish_name(parts)
 
 
 def rhyme(word):
