@@ -83,9 +83,11 @@ def pluralize_noun(n):
 
 
 def count_syllables(word):
-    lookup = d[word.lower()].pop()
-
-    return len(list(x for x in lookup if x[-1].isdigit()))
+    lookup = d.get(word.lower(), None)
+    if lookup:
+        return len(list(x for x in lookup.pop() if x[-1].isdigit()))
+    else:
+        return -1
 
 
 er_exceptions = {

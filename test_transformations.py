@@ -244,3 +244,7 @@ def test_count_syllables_fire():
 
 def test_count_syllables_baby():
     assert tr.count_syllables('baby') == 2
+
+
+def test_count_syllables_swag():
+    assert tr.count_syllables('swag') == -1
