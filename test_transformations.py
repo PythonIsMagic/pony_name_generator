@@ -45,6 +45,10 @@ def test_to_ing_tense_lead():
     assert tr.to_ing_tense('lead') == 'leading'
 
 
+def test_to_ing_tense_listen():
+    assert tr.to_ing_tense('listen') == 'listening'
+
+
 def test_verb_to_noun_rip():
     assert tr.verb_to_noun('rip') == 'ripper'
 
@@ -87,6 +91,10 @@ def test_verb_to_noun_whiz():
 
 def test_verb_to_noun_lead():
     assert tr.verb_to_noun('lead') == 'leader'
+
+
+def test_verb_to_noun_listen():
+    assert tr.verb_to_noun('listen') == 'listener'
 
 
 def test_to_past_tense():
@@ -163,3 +171,8 @@ def test_pluralize_noun_halo():
 def test_pluralize_noun_tooth():
     result = tr.pluralize_noun('tooth')
     assert result == 'teeth'
+
+
+def test_pluralize_noun_rodeo():
+    result = tr.pluralize_noun('rodeo')
+    assert result == 'rodeos'

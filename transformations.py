@@ -110,5 +110,6 @@ exceptions = {
     'halo': 'halos',
     'tooth': 'teeth',
     'mouse': 'mice',
-    'deer': 'deer'
+    'deer': 'deer',
+    'rodeo': 'rodeos',  # Maybe a rule for this...
 }
