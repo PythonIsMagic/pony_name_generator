@@ -1,6 +1,6 @@
 
 DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
-
+DOUBLING_EXCEPTIONS = ('mb', 'ng', 'ot')
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 
@@ -16,7 +16,7 @@ def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
     if verb.endswith('e'):
         return verb[:-1] + 'ing'
-    elif verb.endswith(('mb', 'ng', 'ot')):  # Doubling Exceptions
+    elif verb.endswith(DOUBLING_EXCEPTIONS):
         return verb + 'ing'
     elif verb[-3] in VOWELS and verb[-2] in VOWELS:  # No doubling for double vowels!
         return verb + 'ing'
@@ -32,12 +32,12 @@ def verb_to_noun(verb):
         return er_exceptions[verb]
     elif verb.endswith('e'):
         return verb + 'r'
-    elif verb.endswith(('mb', 'ng')):
+    elif verb.endswith(DOUBLING_EXCEPTIONS):
         return verb + 'ing'
+    elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:  # No doubling for double vowels!
+        return double_up_con(verb, 'er')
     elif verb[-2] in VOWELS and verb[-1] in VOWELS:
         return verb + 'er'
-    elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
-        return double_up_con(verb, 'er')
     else:
         return verb + 'er'
 
@@ -52,7 +52,8 @@ er_exceptions = {
     'vend': 'vendor',
     'invest': 'investor',
     'credit': 'creditor',
-    'instruct': 'instructor'
+    'instruct': 'instructor',
+    'guide': 'guide',
 
 }
 
