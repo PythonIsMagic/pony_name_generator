@@ -248,3 +248,27 @@ def test_count_syllables_baby():
 
 def test_count_syllables_swag():
     assert tr.count_syllables('swag') == -1
+
+
+def test_count_syllables_resonance():
+    assert tr.count_syllables('resonance') == 3
+
+
+def test_count_syllables_tension():
+    assert tr.count_syllables('tension') == 2
+
+
+def test_count_syllables_gaze():
+    assert tr.count_syllables('gaze') == 1
+
+
+def test_count_syllables_noisy():
+    assert tr.count_syllables('noisy') == 2
+
+
+def test_too_wordy_jacuzzi_not_in_dict():
+    assert tr.too_wordy('jacuzzi', 'avalanche') is False
+
+
+def test_too_wordy_true():
+    assert tr.too_wordy('helicopter', 'automobile')

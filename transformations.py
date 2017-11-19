@@ -83,11 +83,28 @@ def pluralize_noun(n):
 
 
 def count_syllables(word):
+    # print("lookin up: '{}'".format(word))
     lookup = d.get(word.lower(), None)
+    # print("result: {}".format(lookup))
+
     if lookup:
         return len(list(x for x in lookup.pop() if x[-1].isdigit()))
     else:
         return -1
+
+
+def too_wordy(word1, word2):
+    word1_ct = count_syllables(word1)
+    word2_ct = count_syllables(word2)
+
+    # print('{} = {}, {} = {}'.format(word1, word1_ct, word2, word2_ct))
+
+    if word1_ct == -1 or word2_ct == -1:
+        return False
+    elif word1_ct >= 3 and word2_ct >= 4:
+        return True
+    else:
+        return False
 
 
 er_exceptions = {

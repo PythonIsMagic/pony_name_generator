@@ -28,7 +28,10 @@ categories = (
 
 formats = [
     ['compound'],
-    ['noun'],
+    # ['noun'],
+    # ['adj'],
+    ['big word'],
+
     ['noun', 'noun'],
     ['noun', 'noun_plural'],
     ['noun', 'verb'],
@@ -37,7 +40,6 @@ formats = [
     ['verb_ing', 'noun'],
     ['verb_ing', 'noun_plural'],
 
-    ['adj'],
     ['adj', 'noun'],
     ['adj', 'noun_plural'],
     ['adj', 'verb'],
@@ -135,19 +137,25 @@ def get_name(word_dict, args):
                 word = random.choice(word_dict[c])
 
             elif c == 'rhyme':
-                word = rhyme(parts[-1])  # Rhyme the last word
+                word = rhyme(parts[-1])
             elif c.startswith('alliterate'):
                 part = c.split()[-1]
-                word = alliteration(word_dict[part], parts[-1])  # Alliterate the last word)
+                word = alliteration(word_dict[part], parts[-1])
 
             # Fallback is to show what category it is
-            if not word:
-                word = '#{}#'.format(c)
+            # if not word:
+                # word = '#{}#'.format(c)
 
-            # Check for repetition
-            if len(parts) > 0 and word in parts[-1]:
+            # Check for repetition/wordiness
+            existing = len(parts) > 0
+
+            if existing and word in parts[-1]:
                 word = None
-            else:
+            elif existing and tr.too_wordy(parts[-1], word):
+                print('New word is too wordy! -- {}'.format(word))
+                word = None
+
+            if word:
                 break
 
         else:
@@ -201,6 +209,11 @@ def import_words():
     word_dict['verb_ing'] = [tr.to_ing_tense(v) for v in word_dict['verb']]
     word_dict['verb_er'] = [tr.verb_to_noun(v) for v in word_dict['verb']]
     word_dict['noun_plural'] = [tr.pluralize_noun(n) for n in word_dict['noun'] if n not in word_dict['noun_abstract']]
+
+    big_words = [w for w in word_dict['noun'] if tr.count_syllables(w) > 2]
+    big_words.extend([w for w in word_dict['adj'] if tr.count_syllables(w) > 2])
+
+    word_dict['big word'] = big_words
 
     return word_dict
 
