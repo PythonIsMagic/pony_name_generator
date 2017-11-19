@@ -176,3 +176,71 @@ def test_pluralize_noun_tooth():
 def test_pluralize_noun_rodeo():
     result = tr.pluralize_noun('rodeo')
     assert result == 'rodeos'
+
+
+def test_to_past_tense_rip():
+    assert tr.to_past_tense('rip') == 'ripped'
+
+
+def test_to_past_tense_walk():
+    assert tr.to_past_tense('walk') == 'walked'
+
+
+def test_to_past_tense_run():
+    assert tr.to_past_tense('run') == 'ran'
+
+
+def test_to_past_tense_hum():
+    assert tr.to_past_tense('hum') == 'hummed'
+
+
+def test_to_past_tense_breathe():
+    assert tr.to_past_tense('breathe') == 'breathed'
+
+
+def test_to_past_tense_create():
+    assert tr.to_past_tense('create') == 'created'
+
+
+def test_to_past_tense_hope():
+    assert tr.to_past_tense('hope') == 'hoped'
+
+
+def test_to_past_tense_hop():
+    assert tr.to_past_tense('hop') == 'hopped'
+
+
+def test_to_past_tense_fly():
+    assert tr.to_past_tense('fly') == 'flown'
+
+
+def test_to_past_tense_whiz():
+    assert tr.to_past_tense('whiz') == 'whizzed'
+
+
+def test_to_past_tense_lead():
+    assert tr.to_past_tense('lead') == 'led'
+
+
+def test_to_past_tense_listen():
+    assert tr.to_past_tense('listen') == 'listened'
+
+
+def test_count_syllables_cat():
+    assert tr.count_syllables('cat') == 1
+
+
+def test_count_syllables_rarity():
+    assert tr.count_syllables('rarity') == 3
+
+
+def test_count_syllables_catastrophe():
+    assert tr.count_syllables('catastrophe') == 4
+
+
+def test_count_syllables_fire():
+    assert tr.count_syllables('fire') == 1
+
+
+def test_count_syllables_baby():
+    assert tr.count_syllables('baby') == 2

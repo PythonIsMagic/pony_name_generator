@@ -1,6 +1,10 @@
+from nltk.corpus import cmudict
+
 DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
 DOUBLING_EXCEPTIONS = ('mb', 'ng', 'ot', 'en')
 VOWELS = ('a', 'e', 'i', 'o', 'u')
+
+d = cmudict.dict()
 
 
 def double_up_con(word, suffix):
@@ -9,6 +13,16 @@ def double_up_con(word, suffix):
 
 def to_past_tense(verb):
     """ Takes a present tense verb and changes it to past tense 'ed' or similar. """
+    if verb in past_tense_exceptions:
+        return past_tense_exceptions[verb]
+    elif verb.endswith('e'):
+        return verb + 'd'
+    elif verb.endswith(DOUBLING_EXCEPTIONS):
+        return verb + 'ed'
+    elif verb.endswith(DOUBLERS):
+        return double_up_con(verb, 'ed')
+    else:
+        return verb + 'ed'
 
 
 def to_ing_tense(verb):
@@ -68,6 +82,12 @@ def pluralize_noun(n):
         return n + 's'
 
 
+def count_syllables(word):
+    lookup = d[word.lower()].pop()
+
+    return len(list(x for x in lookup if x[-1].isdigit()))
+
+
 er_exceptions = {
     'create': 'creator',
     'act': 'actor',
@@ -88,9 +108,10 @@ past_tense_exceptions = {
     'dive': 'dove',
     'eat': 'ate',
     'bite': 'bit',
+    'lead': 'led',
     'swim': 'swam',
     'run': 'ran',
-    'fly': 'flew',  # flown
+    'fly': 'flown',  # flown
     'fight': 'fought',
     'sew': 'sewn',
     'see': 'saw',  # seen
