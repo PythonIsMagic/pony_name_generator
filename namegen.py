@@ -12,32 +12,32 @@ import transformations as tr
 DATA_DIR = 'data'
 
 formats = [
-    # ('compound_names',),
-    ('nouns', None, 'nouns'),
-    ('nouns', None, 'verbs'),
-    ('verbs', None, 'nouns'),
-    ('adj', None, 'nouns'),
-    ('adj', None, 'verbs'),
+    # ('compound',),
+    ('noun', None, 'noun'),
+    ('noun', None, 'verb'),
+    ('verb', None, 'noun'),
+    ('adj', None, 'noun'),
+    ('adj', None, 'verb'),
 
-    # ('verbs', '3letter', None, 'nouns'),
+    ('verb', '3letter', None, 'noun'),
 
-    # ('suffix_noun', 'nouns', None, 'nouns'),
-    # ('nouns', None, 'suffix_noun', 'nouns'),
-    # ('suffix_noun', 'nouns', None, 'verbs'),
-    # ('nouns', None, 'suffix_verb', 'verbs'),
-    # ('suffix_verb', 'verbs', None, 'nouns'),
-    # ('adj', None, 'suffix_noun', 'nouns'),
-    # ('adj', None, 'suffix_verb', 'verbs'),
+    # ('suffix_noun', 'noun', None, 'noun'),
+    # ('noun', None, 'suffix_noun', 'noun'),
+    # ('suffix_noun', 'noun', None, 'verb'),
+    # ('noun', None, 'suffix_verb', 'verb'),
+    # ('suffix_verb', 'verb', None, 'noun'),
+    # ('adj', None, 'suffix_noun', 'noun'),
+    # ('adj', None, 'suffix_verb', 'verb'),
 
     # ('nouns', None, 'rhyme'),
     # ('verbs', None, 'rhyme'),
 
-    # ('honorifics', None, 'compound_names',),
-    # ('honorifics', None, 'nouns', None, 'nouns'),
-    # ('honorifics', None, 'nouns', None, 'verbs'),
-    # ('honorifics', None, 'verbs', None, 'nouns'),
-    # ('honorifics', None, 'adj', None, 'nouns'),
-    # ('honorifics', None, 'adj', None, 'verbs'),
+    ('honorific', None, 'compound',),
+    ('honorific', None, 'noun', None, 'noun'),
+    ('honorific', None, 'noun', None, 'verb'),
+    ('honorific', None, 'verb', None, 'noun'),
+    ('honorific', None, 'adj', None, 'noun'),
+    ('honorific', None, 'adj', None, 'verb'),
 ]
 
 
@@ -152,13 +152,13 @@ def import_words():
     categories = (
         '3letter',
         'adj',
-        'nouns',
-        'nouns_abstract',
-        'verbs',
+        'noun',
+        'noun_abstract',
+        'verb',
         # 'rhyme',
-        'honorifics',
+        'honorific',
         'suffix',
-        'compound_names',
+        'compound',
         'suffix_noun',
         'suffix_verb',
     )
