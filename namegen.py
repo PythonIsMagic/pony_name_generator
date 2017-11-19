@@ -112,21 +112,31 @@ def get_name(word_dict, args):
 
     for c in choice:
         word = None
+        tries = 0
+        while word is None and tries < 5:
+            tries += 1
 
-        if c is None:
-            word = '???'
-        elif word_dict.get(c, None):
-            word = random.choice(word_dict[c])
+            if word_dict.get(c, None):
+                word = random.choice(word_dict[c])
 
-        elif c == 'rhyme':
-            word = rhyme(parts[-1])  # Rhyme the last word
-        elif c.startswith('alliterate'):
-            part = c.split()[-1]
-            word = alliteration(word_dict[part], parts[-1])  # Alliterate the last word)
+            elif c == 'rhyme':
+                word = rhyme(parts[-1])  # Rhyme the last word
+            elif c.startswith('alliterate'):
+                part = c.split()[-1]
+                word = alliteration(word_dict[part], parts[-1])  # Alliterate the last word)
 
-        # Fallback is to show what category it is
-        if not word:
-            word = '#{}#'.format(c)
+            # Fallback is to show what category it is
+            if not word:
+                word = '#{}#'.format(c)
+
+            # Check for repetition
+            if len(parts) > 0 and word in parts[-1]:
+                word = None
+            else:
+                break
+
+        else:
+            word = "Gnarfsplat"
 
         parts.append(word)
 
@@ -170,17 +180,13 @@ def import_words():
     """ Collects all the words from the data files.
         Creates a dictionary of nouns, verbs, and adjectives.
     """
-
-    print('Importing database')
     word_dict = {c: scan_files(c) for c in categories}
 
     # Transformations
-    print('Processing transformations!')
     word_dict['verb_ing'] = [tr.to_ing_tense(v) for v in word_dict['verb']]
     word_dict['verb_er'] = [tr.verb_to_noun(v) for v in word_dict['verb']]
     word_dict['noun_plural'] = [tr.pluralize_noun(n) for n in word_dict['noun'] if n not in word_dict['noun_abstract']]
 
-    print('Import and transformations complete!')
     return word_dict
 
 
