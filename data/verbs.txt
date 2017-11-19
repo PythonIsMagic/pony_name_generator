@@ -68,7 +68,6 @@ drop
 embark
 entertain
 explore
-eye
 fall 
 feed
 fence
@@ -116,6 +115,9 @@ kick
 land
 lapse
 lead
+back
+carry
+
 lean
 lick
 lift
@@ -152,6 +154,7 @@ protect
 prove
 provide 
 pull
+ravish
 race
 reach
 reinforce
@@ -159,6 +162,8 @@ respond
 rest
 reward
 ride
+tote
+pack
 rise
 roar
 roll
@@ -217,6 +222,11 @@ stroke
 stun
 swat 
 sweep
+scan
+scrutinize
+read
+frisk
+swell
 swim
 swing
 swoop
@@ -255,3 +265,11 @@ worm
 worship
 wreck
 zoom
+lament
+lavish
+collapse
+resound
+explode
+echo
+schlepp
+

@@ -43,13 +43,12 @@ lightning
 makeup
 molasses
 moxie
+nature
 nightfall
 nouveau
-nuture
 obscura
 obscurity
 ornate
-ravish
 satin
 sawdust
 sheen
@@ -59,6 +58,7 @@ spacious
 spandex
 spunk
 steam
+gusto
 straw
 teeth
 temperament
@@ -70,3 +70,7 @@ utopia
 verve
 wampum
 yarn
+clairvoyance
+cadence
+glitz
+swag

@@ -29,7 +29,6 @@ charisma
 charity
 charm
 cherish
-clairvoyance
 comfort
 command
 compassion
@@ -94,7 +93,6 @@ glimmer
 glint
 glisten
 glitter
-glitz
 glory
 gloss
 glow
@@ -103,7 +101,6 @@ grace
 grandeur
 gratuity
 guidance
-gusto
 harmony
 heart
 heaven
@@ -123,12 +120,13 @@ intuition
 invention
 justice
 kindness
-kinglaugh
+king
+laugh
 laughter
-lavish
 leader
 levitation
-libertylove
+liberty
+love
 loyalty
 luminosity
 luxury
@@ -169,8 +167,8 @@ shine
 sincerity
 sovereign
 sparkle
-special
 spirit
+swell
 splendor
 spontaneity
 stamina

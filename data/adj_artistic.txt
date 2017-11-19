@@ -1,4 +1,10 @@
 
+2D
+ceramic
+3D
+monochrome
+acrylic
+
 accelerando
 acoustic
 agitato
@@ -6,7 +12,6 @@ allegro
 alto
 arabesque
 atonal
-baritone
 baroque
 bluegrass
 bolero
@@ -18,7 +23,6 @@ delicato
 devoto
 dolcissimo
 espressivo
-falsetto
 fancy
 flamenco
 focoso
@@ -27,13 +31,11 @@ fortissimo
 forza
 forzando
 fresco
-furia
 furioso
 glissando
 grandioso
 grave
 grazioso
-gusto
 improvvisando
 improvvisato
 incalzando
@@ -43,7 +45,6 @@ intimo
 irato
 lacrimoso
 lagrimoso
-lament
 lamentando
 lamentoso
 largamente
@@ -53,7 +54,8 @@ larghissimo
 largo
 legato
 lento
-luninoso
+luminoso
+faux
 maestro
 magico
 magnifico
@@ -67,7 +69,6 @@ natural
 piano
 pizzicato
 presto
-ragtime
 ravvivando
 ridicolo
 rococo
@@ -78,13 +79,10 @@ sempre
 serioso
 silenzio
 sonoro
-soprano
 spiccato
 staccato
 tacet
-tenor
 tessitura
 tranquillo
 tremelo
-virtuoso
 vivace

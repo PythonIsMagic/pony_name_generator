@@ -287,7 +287,6 @@ superior
 supreme
 sure
 sweet
-swell
 swirly          
 talented
 tall
@@ -308,6 +307,8 @@ upper
 veined
 viable
 vibrant
+kinetic
+lavish
 vivid
 warm
 water
