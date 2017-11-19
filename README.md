@@ -5,61 +5,78 @@
 ## What's it?
 
 [Project summary]
+Fun project inspired by My Little Pony to generate random pony names.  Uses a database of
+nouns, verbs, and adjectives and combines them in random ways to create entertaining names.
+
+Also performs transformations on words to come up with the maximum variety possible.
+
+Verbs are originally basic present tense but can be transformed as:
+	simple present tense -> present continuous  (ie: 'walk' -> 'walking')
+	simple present tense -> noun (ie: 'walk' -> 'walker')
+
+Nouns are originally singular, but can be transformed as follows:
+	singular noun -> plural noun (ie: 'box' -> 'boxes')
 
 ![](screenshot.png)
 
 ### Features
-- **Feature 1** Description
-- **Feature 2** Description
-
+- **Interactive** Interactive One-by-one name generation
+- **Bulk generation** Generate a list of any number of names 
+- **Favoring** Mark your favorate names for later!
 ---
 
 ### Prerequisities
 Python 2
 
 #### Uses
-* argparse, logging, pytest
+* argparse, logging, pytest, nltk
 
-
-### Installing
-- **Linux:**
-- **Max OS X:** n/a
-- **Windows:** n/a
-
----
 
 ## Usage
 ```
-$ python main.py
+Interactive:
+$ python namegen.py -i
 ```
 For help: python main.py -h
 
 ***EXAMPLES:***
-> Example 1:
+> Generate 10 names:
 ```
-$ python main.py 1
+$ python namegen.py -n 10
 ```
 
-> Example 2:
+> Generate 10 names with honorifics:
 ```
-$ python main.py 2
+$ python namegen.py -h -n 10
 ```
 
 ---
 
 ### TODO
 
-- [ ] Fill in README details.
-- [ ] First commit: README
-- [ ] First branch:
-- [ ] Create first functional test
+- [X] Fill in README details.
+- [X] First commit: README
+- [X] First branch:
 - [ ] Add a screenshot to the README
 - [ ] Configure konch to be really sexy with iPython
 - [ ] Generate requirements.txt with $ pip freeze --local > requirements.txt
-- [ ] Setup sphinx docs: $ python manage.py docs
-- [ ] Build sphinx docs: $ project/doc/make html
-- [ ] Start first sphinx documentation!
-
+- [ ] Thin out the music terminology a bit
+- [ ] Make sure all official pony names are capable of being generated
+- [ ] Blacklist all official pony names - we want originals!
+- [ ] Don't repeat similar words in a single name ('Walking Walker')
+- [ ] Fix: Some nouns are getting cut off "Ica" "Moa"
+- [ ] Single word names - Maybe limit to over 2 syllables
+- [ ] Count syllables in a word (NLTK?)
+- [ ] Add alliteration
+- [ ] When creating the database, add all variations from the start
+- [ ] Add support for a persistant shelve database, updating, etc.
+- [ ] Make the combos better
+- [ ] Make honorifics optional from command line
+- [ ] noun transformations
+- [ ] Add verb past tense transformations
+- [ ] Create a Django site - one page, to handle generating names
+- [ ] Create an IOS app
+- [ ] Port to Android
 ---
 
 ## Meta
