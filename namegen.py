@@ -6,6 +6,7 @@ import argparse
 import os
 import random
 import rhymes
+import string
 import sys
 import transformations as tr
 
@@ -109,13 +110,15 @@ def finish_name(parts):
     # letter after the '
     # ie: bird's -> Bird'S
 
-    return ' '.join(parts).title()
+    # return ' '.join(parts).title()
+    return string.capwords(' '.join(parts))
 
 
 def get_name(word_dict, args):
     """ Creates a random name from a word dictionary. """
 
     choice = random.choice(formats)[:]
+    print(choice)
 
     if args.honorifics:
         choice.insert(0, 'honorific')
