@@ -16,9 +16,9 @@ def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
     if verb.endswith('e'):
         return verb[:-1] + 'ing'
-    elif verb.endswith(('mb', 'ng')):
+    elif verb.endswith(('mb', 'ng', 'ot')):  # Doubling Exceptions
         return verb + 'ing'
-    elif verb[-3] in VOWELS and verb[-2] in VOWELS:
+    elif verb[-3] in VOWELS and verb[-2] in VOWELS:  # No doubling for double vowels!
         return verb + 'ing'
     elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
         return double_up_con(verb, 'ing')
