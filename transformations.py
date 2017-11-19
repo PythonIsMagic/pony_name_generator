@@ -14,7 +14,7 @@ def to_past_tense(verb):
 def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
     if verb.endswith('e'):
-        return verb[:-1] + 'ing'
+        return verb[:-1] + 'ing'  # Remove the ending e
     elif verb.endswith(DOUBLING_EXCEPTIONS):
         return verb + 'ing'
     elif verb[-3] in VOWELS and verb[-2] in VOWELS:  # No doubling for double vowels!
@@ -32,11 +32,11 @@ def verb_to_noun(verb):
     elif verb.endswith('e'):
         return verb + 'r'
     elif verb.endswith(DOUBLING_EXCEPTIONS):
-        return verb + 'ing'
+        return verb + 'er'
+    elif verb[-3] in VOWELS and verb[-2] in VOWELS:
+        return verb + 'er'
     elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:  # No doubling for double vowels!
         return double_up_con(verb, 'er')
-    elif verb[-2] in VOWELS and verb[-1] in VOWELS:
-        return verb + 'er'
     else:
         return verb + 'er'
 
@@ -80,7 +80,7 @@ er_exceptions = {
     'credit': 'creditor',
     'instruct': 'instructor',
     'guide': 'guide',
-
+    'hurry': 'hurrier'
 }
 
 past_tense_exceptions = {
