@@ -51,8 +51,8 @@ dumb
 extreme
 fat
 fatal
-fearful
 feared
+fearful
 feeble
 foolish
 forboding
@@ -68,8 +68,8 @@ grimy
 gruesome
 hapless
 harmful
-hateful
 hated
+hateful
 heartless
 heartsick
 heinous

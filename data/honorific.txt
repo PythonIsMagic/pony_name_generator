@@ -1,130 +1,126 @@
-Mr.
-Mrs.
-Ms. 
-Dr.
-Miss
-Sir
-Lady
-Lord 
 
-President
-General
-Captain
-Father
-Doctor
-Earl
-Duke
-Master
-Mx.
-Gentleman
-Sire
-Mistress
-Madam
-Baron
-Esq.
-The Honourable
-Professor
-Chancellor
-Vice-Chancellor
-Principal
-The Reverend
-Warden
-Dean
-Regent
-Rector
-Provost
-Director
-Chief Executive
-His Holiness
-His All Holiness
-His Beatitude
-His Excellency
-His Most Eminent Highness
-His Eminence
-The Most Reverend
-His Grace
-His Lordship
-The Right Reverend
-Father
-Pastor
-Brother
-Sister
-Elder
-The Great
-The Great and Powerful
-
-Sherrif
-Deputy
-King
-Queen
-The Divine
-Pretender
-Majesty
-Sovereign
-Count
-Prince
-Princess
-Grand Duke
-Deacon
-Bishop
-Maid
-Senator
-Speaker
-Councillor
-Alderman
-Selectman
-Delegate
-Mayor
-Lady Mayoress
-Lord Mayor
-Governor
-Lietenant
-Prefect
-Prelate
-Premier
-Burgress
-Ambassador
-Envoy
-Secretary
-General
-Archduke
-Archduchess
-Grand Duchess
-Marquis
-Marquess
-Countess
-Emperor
-Empress
-Tsar
-Tsarina
-Judge
-Magistrate
-Promagistrate
-Friar
-The Venerable
-The Blessed
 Acolyte
-Monsignor
 Admiral
-Grand Admiral
-Lord High Admiral
-Rear Admiral
-Vice Admiral
+Agent
+Alderman
+Ambassador
+Archduchess
+Archduke
+Baron
+Bishop
 Brigadier
+Brother
+Burgress
 Captain
+Chancellor
+Chief Executive
 Colonel
 Commander
 Commander-in-Chief
-Lieutenant Commander
-Wing Commander
 Commodore
-Corporal
-Major
-Marshal
-Officer
-Private
-Sergeant
 Constable
-Agent
+Corporal
+Councillor
+Count
+Countess
+Deacon
+Dean
+Delegate
+Deputy
+Director
+Doctor
+Dr.
+Duke
+Earl
+Elder
+Emperor
+Empress
+Envoy
+Esq.
+Father
+Friar
+General
+Gentleman
+Governor
+Grand Admiral
+Grand Duchess
+Grand Duke
 Grand Wizard
+His All Holiness
+His Beatitude
+His Eminence
+His Excellency
+His Grace
+His Holiness
+His Lordship
+His Most Eminent Highness
 Imperial Wizard
+Judge
+King
+Lady
+Lady Mayoress
+Lietenant
+Lieutenant Commander
+Lord 
+Lord High Admiral
+Lord Mayor
+Madam
+Magistrate
+Maid
+Majesty
+Major
+Marquess
+Marquis
+Marshal
+Master
+Mayor
+Miss
+Mistress
+Monsignor
+Mr.
+Mrs.
+Ms. 
+Mx.
+Officer
+Pastor
+Prefect
+Prelate
+Premier
+President
+Pretender
+Prince
+Princess
+Principal
+Private
+Professor
+Promagistrate
+Provost
+Queen
+Rear Admiral
+Rector
+Regent
+Secretary
+Selectman
+Senator
+Sergeant
+Sherrif
+Sir
+Sire
+Sister
+Sovereign
+Speaker
+The Blessed
+The Divine
+The Great
+The Great and Powerful
+The Honourable
+The Most Reverend
+The Reverend
+The Right Reverend
+The Venerable
+Tsar
+Tsarina
+Vice Admiral
+Vice-Chancellor
+Warden
+Wing Commander

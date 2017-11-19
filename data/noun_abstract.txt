@@ -1,10 +1,10 @@
-binoculars
-nitroglycerine
 agility
 apocalypse
 balderdash
+binoculars
 bravery
 brushwork
+cadence
 calamity
 calligraphy
 canvas
@@ -15,6 +15,7 @@ celeste
 cement
 chaos
 chutzpa
+clairvoyance
 clay
 congo
 daybreak
@@ -36,7 +37,9 @@ forest
 frazzle
 frenzy
 glitter
+glitz
 graffiti
+gusto
 haiku
 lace
 landscape
@@ -46,6 +49,7 @@ molasses
 moxie
 nature
 nightfall
+nitroglycerine
 nouveau
 obscura
 obscurity
@@ -59,8 +63,8 @@ spacious
 spandex
 spunk
 steam
-gusto
 straw
+swag
 teeth
 temperament
 thunder
@@ -71,7 +75,3 @@ utopia
 verve
 wampum
 yarn
-clairvoyance
-cadence
-glitz
-swag
