@@ -1,7 +1,7 @@
 from nltk.corpus import cmudict
 
 DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
-DOUBLING_EXCEPTIONS = ('mb', 'ng', 'en', 'um')
+DOUBLING_EXCEPTIONS = ('mb', 'ng', 'en')
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 d = cmudict.dict()
