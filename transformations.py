@@ -1,7 +1,7 @@
 from nltk.corpus import cmudict
 
 DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
-DOUBLING_EXCEPTIONS = ('mb', 'ng', 'ot', 'en')
+DOUBLING_EXCEPTIONS = ('mb', 'ng', 'en', 'um')
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 d = cmudict.dict()
@@ -133,4 +133,5 @@ exceptions = {
     'mouse': 'mice',
     'deer': 'deer',
     'rodeo': 'rodeos',  # Maybe a rule for this...
+    'ion': 'ions'
 }
