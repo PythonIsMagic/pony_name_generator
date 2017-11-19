@@ -28,18 +28,21 @@ categories = (
 formats = [
     # ('compound',),
     # ['noun', None, 'noun'],
-    ['noun', None, 'noun_plural'],
+    ['noun', None, 'alliterate noun'],
+    ['noun', None, 'alliterate verb'],
+    ['noun', None, 'alliterate adj'],
+    # ['noun', None, 'noun_plural'],
 
     # ['noun', None, 'verb'],
-    ['noun', None, 'verb_er'],
+    # ['noun', None, 'verb_er'],
     # ['verb', None, 'noun'],
-    ['verb_ing', None, 'noun'],
+    # ['verb_ing', None, 'noun'],
 
     # ['adj', None, 'noun'],
-    ['adj', None, 'noun_plural'],
+    # ['adj', None, 'noun_plural'],
     # ['adj', None, 'verb'],
-    ['adj', None, 'verb_ing'],
-    ['adj', None, 'verb_er'],
+    # ['adj', None, 'verb_ing'],
+    # ['adj', None, 'verb_er'],
 
     # Adding random 3-letter-partials
     # ['verb', '3letter', None, 'noun'],
@@ -97,7 +100,6 @@ def get_name(word_dict, args):
     if args.honorifics:
         choice.insert(0, 'honorific')
         choice.insert(1, None)
-        # words.insert(0, random.choice(word_dict.get('honorific', [])) + ' ')
 
     words = []
 
@@ -110,8 +112,10 @@ def get_name(word_dict, args):
             word = random.choice(word_dict[c])
 
         elif c == 'rhyme':
-            word = process_rhyme(word_dict, words[0])
-
+            word = rhyme(words[-2])  # Rhyme the last word
+        elif c.startswith('alliterate'):
+            part = c.split()[-1]
+            word = alliteration(word_dict[part], words[-2])  # Alliterate the last word)
         # Fallback is to show what category it is
         if not word:
             word = '#{}#'.format(c)
@@ -122,10 +126,20 @@ def get_name(word_dict, args):
     return '{:40} {}'.format(name, choice)
 
 
-def process_rhyme(word_dict, word):
+def rhyme(word):
     print('\t*** Rhyming!')
     # We'll attempt to rhyme the first word
     return rhymes.find_rhyme(word)
+
+
+def alliteration(word_list, word):
+    first_letter = word[0]
+    possibilites = [w for w in word_list if w.startswith(first_letter)]
+
+    if len(possibilites) > 0:
+        return random.choice(possibilites)
+    else:
+        return random.choice(word_list)
 
 
 def scan_files(prefix):
