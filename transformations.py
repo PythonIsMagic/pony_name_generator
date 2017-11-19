@@ -1,5 +1,5 @@
 DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
-DOUBLING_EXCEPTIONS = ('mb', 'ng', 'ot')
+DOUBLING_EXCEPTIONS = ('mb', 'ng', 'ot', 'en')
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 
 
