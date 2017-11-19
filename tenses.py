@@ -1,4 +1,13 @@
 
+DOUBLERS = ('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')
+
+VOWELS = ('a', 'e', 'i', 'o', 'u')
+
+
+def double_up_con(word, suffix):
+    return word[:-1] + word[-1] * 2 + suffix
+
+
 def to_past_tense(verb):
     """ Takes a present tense verb and changes it to past tense 'ed' or similar. """
 
@@ -7,8 +16,10 @@ def to_ing_tense(verb):
     """ Takes a present tense verb and adds the suffix 'ing' """
     if verb.endswith('e'):
         return verb[:-1] + 'ing'
-    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')):
-        return verb[:-1] + verb[-1] * 2 + 'ing'
+    elif verb.endswith(('mb', 'ng')):
+        return verb + 'ing'
+    elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
+        return double_up_con(verb, 'ing')
     else:
         return verb + 'ing'
 
@@ -19,8 +30,10 @@ def verb_to_noun(verb):
         return er_exceptions[verb]
     elif verb.endswith('e'):
         return verb + 'r'
-    elif verb.endswith(('b', 'd', 'g', 'm', 'n', 'p', 't', 'z')):
-        return verb[:-1] + verb[-1] * 2 + 'er'
+    elif verb.endswith(('mb', 'ng')):
+        return verb + 'ing'
+    elif verb.endswith(DOUBLERS) and verb[-2] in VOWELS:
+        return double_up_con(verb, 'er')
     else:
         return verb + 'er'
 
