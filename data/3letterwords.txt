@@ -66,7 +66,7 @@ cap
 caw
 cha
 chi
-cob 
+cob
 cog
 con
 coy
@@ -115,7 +115,6 @@ foe
 fog
 fop
 fox
-fox 
 fry
 fun
 fur
@@ -134,7 +133,7 @@ get
 gig
 gin
 git
-go 
+go
 gob
 goo
 gum
@@ -209,7 +208,7 @@ nog
 nub
 nut
 oaf
-oak 
+oak
 oat
 odd
 ode
@@ -253,7 +252,7 @@ rip
 rot
 row
 rub
-ruby 
+ruby
 rum
 run
 rye
@@ -284,7 +283,6 @@ tee
 ten
 tie
 tin
-tin 
 tip
 ton
 top

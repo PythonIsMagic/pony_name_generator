@@ -1,11 +1,11 @@
 50 calibur
+a cappella
 above board
-A cappella
-Ace High
-Ace in the hole
+ace high
+ace in the hole
 al capo
 avante-garde
-Axle grease
+axle grease
 bad box
 bad egg
 bad medicine
@@ -44,17 +44,17 @@ cross-examination
 cross-hatch
 crow's nest
 cut time
-Da Capo
+da capo
 dal segno
 dime novel
 dive bomb
-Divertimento
+divertimento
 double bass
 double dot
 double stop
 downtempo
 dream book
-Drum kit
+drum kit
 duck walk
 duct tapt
 dust bowl
@@ -78,12 +78,12 @@ high contrast
 high heel
 hot plate
 hyperlink
-ink well
 in style
+ink well
 ivory keys
 jazz fusion
 jingle jangle
-Key Signature
+key signature
 keyword
 lab rat
 late fee
@@ -99,7 +99,7 @@ namby-pamby
 night hawk
 night herder
 night rider
-Nine pin
+nine pin
 nylon string
 olive oil
 open house
@@ -113,8 +113,8 @@ photo finish
 pianoforte
 pop quiz
 positive image
-power chord
 pow-wow
+power chord
 prairie oyster
 prima volta
 printing press
@@ -125,17 +125,17 @@ rat trap
 red eye
 rocket fuel
 safety goggles
-Salt lick
+salt lick
 screwloose
 search term
 self-portrait
 sell out
 sharp shooter
+show stopper
 showoff
-Show Stopper
-Sixes and Sevens
 six shooter
 six string
+sixes and sevens
 skin-flint
 slap bass
 slap-jack
@@ -172,8 +172,8 @@ whammy bar
 wheel spoke
 whim-wham
 white keys
-Whole note
-Whole tone
-Wood block
+whole note
+whole tone
+wood block
 wood pulp
 zig zag

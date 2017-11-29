@@ -56,6 +56,7 @@ obscurity
 ornate
 satin
 sawdust
+serenity
 sheen
 skulduggery
 snow
@@ -72,7 +73,6 @@ tinsel
 trickery
 unity
 utopia
-serenity
 verve
 wampum
 yarn
