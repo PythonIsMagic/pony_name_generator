@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
-""" Sort all text files in the directory """
+""" Sort all text files in the directory
+    -u: --unique
+    -o FILE: Redirects to specified file
+    -f: --ignore-case
+"""
 import subprocess
 
 
