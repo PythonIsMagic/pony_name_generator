@@ -72,6 +72,7 @@ tinsel
 trickery
 unity
 utopia
+serenity
 verve
 wampum
 yarn

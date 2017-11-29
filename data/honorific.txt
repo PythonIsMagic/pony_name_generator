@@ -1,4 +1,3 @@
-
 Acolyte
 Admiral
 Agent
@@ -124,3 +123,5 @@ Vice Admiral
 Vice-Chancellor
 Warden
 Wing Commander
+viceroy
+praetor
