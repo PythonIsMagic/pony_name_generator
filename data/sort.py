@@ -44,6 +44,8 @@ def sort_py(textfiles):
             # Sort them!
             lines = sorted(lines)
 
+            # Add newline character
+            lines = [l + '\n' for l in lines]
         # Write to the same file.
         with open(tf, 'w') as out:
             out.writelines(lines)
