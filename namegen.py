@@ -3,108 +3,13 @@
 """
 
 import argparse
+import data
 import os
 import random
 import rhymes
 import string
 import sys
 import transformations as tr
-
-DATA_DIR = 'data'
-
-categories = (
-    '3letter',
-    'adj',
-    'noun',
-    'noun_abstract',
-    'verb',
-    # 'rhyme',
-    'honorific',
-    'suffix',
-    'compound',
-    'suffix_noun',
-    'suffix_verb',
-)
-
-formats = [
-    ['compound'],
-    # ['noun'],
-    # ['adj'],
-    ['big word'],
-
-    ['noun', 'noun'],
-    ['noun', 'noun_plural'],
-    ['noun', 'verb'],
-    ['noun', 'verb_er'],
-
-    ['verb_ing', 'noun'],
-    ['verb_ing', 'noun_plural'],
-
-    ['adj', 'noun'],
-    ['adj', 'noun_plural'],
-    ['adj', 'verb'],
-    ['adj', 'verb_ing'],
-    ['adj', 'verb_er'],
-
-    # Adding random 3-letter-partials
-    # ['verb', '3letter', 'noun'],
-    # ['3letter', 'verb', 'noun'],
-
-    # Suffix/prefix
-    # ('suffix_noun', 'noun', 'noun'),
-    # ('noun', 'suffix_noun', 'noun'),
-    # ('suffix_noun', 'noun', 'verb'),
-    # ('noun', 'suffix_verb', 'verb'),
-    # ('suffix_verb', 'verb', 'noun'),
-    # ('adj', 'suffix_noun', 'noun'),
-    # ('adj', 'suffix_verb', 'verb'),
-
-    # Rhymes
-    # ('noun', 'rhyme'),
-    # ('verb', 'rhyme'),
-
-    # Alliterations
-    ['noun', 'alliterate noun'],
-    ['noun', 'alliterate noun_plural'],
-    ['noun', 'alliterate verb'],
-    ['noun', 'alliterate verb_er'],
-
-    ['verb_ing', 'alliterate noun'],
-    ['verb_ing', 'alliterate noun_plural'],
-
-    ['adj', 'alliterate noun'],
-    ['adj', 'alliterate noun_plural'],
-    ['adj', 'alliterate verb'],
-    ['adj', 'alliterate verb_ing'],
-    ['adj', 'alliterate verb_er'],
-]
-
-
-class ArgParser(argparse.ArgumentParser):
-    def error(self, message):
-        sys.stderr.write('error: %s\n' % message)
-        self.print_help()
-        sys.exit(2)
-
-
-def setup_parser():
-    """ The parser should either take an integer or the -i arg. """
-
-    parser = argparse.ArgumentParser(description='Generate some pony names!')
-
-    parser.add_argument('-n', '--number', type=int,
-                        help='The number of pony names to generate.')
-
-    parser.add_argument('-i', '--interactive', action='store_true',
-                        help='Generate names one by one - interactively blacklist or like.')
-
-    parser.add_argument('-r', '--review', action='store_true',
-                        help='Check all the word entries that are being used.')
-
-    parser.add_argument('-H', '--honorifics', action='store_true',
-                        help='Adds an honorific prefix to each name.')
-
-    return parser
 
 
 def finish_name(parts):
@@ -119,8 +24,10 @@ def finish_name(parts):
 def get_name(word_dict, args):
     """ Creates a random name from a word dictionary. """
 
-    choice = random.choice(formats)[:]
-    print(choice)
+    choice = random.choice(data.formats)[:]
+    if args.verbose:
+        print('')
+        print(choice)
 
     if args.honorifics:
         choice.insert(0, 'honorific')
@@ -186,7 +93,8 @@ def scan_files(prefix):
     """ Gets all words from all files ending in the specified prefix and returns
         them as a list.
     """
-    files = ['/'.join([DATA_DIR, f]) for f in os.listdir(DATA_DIR) if f.startswith(prefix)]
+    files = ['/'.join([data.DATA_DIR, f])
+             for f in os.listdir(data.DATA_DIR) if f.startswith(prefix)]
 
     words = []
     for f in files:
@@ -203,7 +111,7 @@ def import_words():
     """ Collects all the words from the data files.
         Creates a dictionary of nouns, verbs, and adjectives.
     """
-    word_dict = {c: scan_files(c) for c in categories}
+    word_dict = {c: scan_files(c) for c in data.categories}
 
     # Transformations
     word_dict['verb_ing'] = [tr.to_ing_tense(v) for v in word_dict['verb']]
@@ -232,6 +140,36 @@ def review_word_dict(word_dict):
 
     for d in dupes:
         print(d)
+
+
+class ArgParser(argparse.ArgumentParser):
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+        sys.exit(2)
+
+
+def setup_parser():
+    """ The parser should either take an integer or the -i arg. """
+
+    parser = argparse.ArgumentParser(description='Generate some pony names!')
+
+    parser.add_argument('-n', '--number', type=int,
+                        help='The number of pony names to generate.')
+
+    parser.add_argument('-i', '--interactive', action='store_true',
+                        help='Generate names one by one - interactively blacklist or like.')
+
+    parser.add_argument('-r', '--review', action='store_true',
+                        help='Check all the word entries that are being used.')
+
+    parser.add_argument('-H', '--honorifics', action='store_true',
+                        help='Adds an honorific prefix to each name.')
+
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='Verbose mode.')
+
+    return parser
 
 
 def main():
